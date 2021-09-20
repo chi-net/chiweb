@@ -6,7 +6,7 @@
       <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
       <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</div>
       <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple">我知道了</button>
+        <button class="mdui-btn mdui-ripple" mdui-dialog-close>我知道了</button>
       </div>
     </div>
     <card>
