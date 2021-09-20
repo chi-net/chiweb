@@ -1,11 +1,5 @@
 <template>
   <div id="app">
-    <div class="mdui-dialog" id="tips">
-      <div class="mdui-dialog-title">提示</div>
-      <div class="mdui-dialog-content">本站目前还正在开发中，为您展示的是正在开发的版本，本站暂定版本号：Moe Edition。（版本更新记录详见
-      <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
-      <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</div>
-    </div>
     <card>
       <img src="./assets/icon.jpg" id="chiimg">
       <h2>chihuo2104の小站</h2>
@@ -20,6 +14,10 @@
     </card>
         <card>
       <h1>个人网站</h1>
+      <h1>提示！</h1>
+      <h1>本站目前还正在开发中，为您展示的是正在开发的版本，本站暂定版本号：Moe Edition。（版本更新记录详见
+      <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
+      <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</h1>
       <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
     </card>
         <card>
@@ -27,9 +25,9 @@
       <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
     </card>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
-      Powered by chihuo2104.All rights reserved &copy;2018-{{new Date().getFullYear()}}.Chiweb Application Version:V3.0(Moe)[Preview Edition].Packaged Date:2021-09-20.<br>
-      Engined by <a href="cn.vuejs.org" target="blank">Vue</a>&amp;<a href="nodejs.org" target="blank">Node.js</a>&amp;<a href="webpack.org" target="blank">Webpack.</a>
-      本站已经苟且偷生了<span id="checkday">0</span>天<span id="checkhour">0</span>小时<span id="checkmin">0</span>分钟<span id="checksec">0</span>秒
+      Powered by chihuo2104.All rights reserved &copy;2018-{{new Date().getFullYear()}}.<br>Chiweb Application Version:V3.0(Moe)[Preview Edition].Packaged Date:2021-09-20.<br>
+      Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;<a href="//webpack.org" target="blank">Webpack.</a>
+      本站已经在互联网的角落苟且偷生了<span id="checkday">0</span>天<span id="checkhour">0</span>小时<span id="checkmin">0</span>分钟<span id="checksec">0</span>秒
     </div>
   </div>
 </template>
@@ -55,18 +53,32 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin:0 auto 0;
 }
 .hidden{
-  bottom:-100px !important;
+  bottom:-1000px !important;
 }
 #chiimg{
   border-radius:256px;
   width:40%;
   height:40%;
 }
+@media screen and (min-width:768px){
+    html{
+      background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
+    }
+    #app{
+      margin:0 auto 0;
+    }
+}
+@media screen and (max-width:768px){
+  html{
+    background-image: url("https://akdc-1301312850.cos.ap-nanjing.myqcloud.com/P7ZBA%7B%5DHNF)6)ZAXE85%5DV%248.png");
+  }
+  #app{
+    margin-top:48px;
+  }
+}
 html{
-  background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
   overflow-x:hidden;
