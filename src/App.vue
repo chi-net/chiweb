@@ -14,9 +14,9 @@
       <button class="mdui-btn-block blc3">背景图片</button>
       <button class="mdui-btn-block blc3">下一张&gt;</button>
       </tool-card>
-      <tool-card>
-      <button class="mdui-btn-block">显示版权页</button>
-      </tool-card>
+      <div id="show">
+      <button class="mdui-btn-block" onclick='changeCopyright()'>显示版权页</button>
+      </div>
     </card>
         <card>
       <h1>个人网站</h1>
@@ -26,6 +26,9 @@
       <h1>友情链接</h1>
       <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
     </card>
+    <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
+      Powered by chihuo2104.All rights reserved &copy;2018-{{new Date().getFullYear()}}
+    </div>
   </div>
 </template>
 <script>
@@ -37,8 +40,6 @@ export default {
     card,
     "tool-card":tool_card,
   },
-  data(){
-  }
 }
 </script>
 
@@ -52,8 +53,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin:0 auto 0;
+}
+.hidden{
+  bottom:-20px !important;
 }
 #chiimg{
   border-radius:256px;
@@ -64,5 +67,21 @@ html{
   background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+#copyright{
+  position:absolute;
+  width:100%;
+  bottom:0px;
+  background-color:rgba(255,255,255,0.7);
+  text-align:center;
+  transition:all .3s ease-in-out;
+}
+#show{
+    border-top:1px solid #000000;
+    padding-top:3px;
+    padding-bottom:3px;
+    display:block;
 }
 </style>

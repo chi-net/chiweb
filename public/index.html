@@ -29,6 +29,13 @@
       window.onload=function(){
         var inst = new mdui.Dialog("#tips");
         inst.open();
+      };
+      function changeCopyright(){
+        if(document.getElementById("show").className=="hidden"){
+          document.getElementById("show").className="";
+        }else{
+          document.getElementById("show").className="hidden";
+        }
       }
       </script>
     <!-- built files will be auto injected -->

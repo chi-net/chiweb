@@ -1,13 +1,15 @@
 <template>
 <div id="toolcard-app">
-<slot></slot>
+<slot :showcp="showCopyright"></slot>
 </div>
 </template>
 <script>
 export default{
-    data(){
-
+    methods:{
+    showCopyright:function(){
+      this.$store.changeCH();
     }
+  }
 }
 </script>
 
