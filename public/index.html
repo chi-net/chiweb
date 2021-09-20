@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+  integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+  integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+  crossorigin="anonymous"
+></script>
     <title>chihuo2104の小站</title>
   </head>
   <body>
@@ -12,6 +24,12 @@
       <strong>您使用的浏览器过&nbsp;于&nbsp;先&nbsp;进，其不支持JavaScript。请您使用更加先进的浏览器访问本网站。如果您已经确认您的浏览器极为先进，请您在本网站启用JavaScript。</strong>
     </noscript>
     <div id="app"></div>
+    <script>
+      window.onload=function(){
+        var inst = new mdui.Dialog("#tips");
+        inst.open();
+      }
+      </script>
     <!-- built files will be auto injected -->
   </body>
 </html>
