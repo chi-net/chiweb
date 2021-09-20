@@ -26,10 +26,10 @@
     </noscript>
     <div id="app"></div>
     <script>
-      window.onload=function(){
+      setTimeout(function(){
         var inst = new mdui.Dialog("#tips");
         inst.open();
-      };
+      },2000);
       function changeCopyright(){
         if(document.getElementById("show").className=="hidden"){
           document.getElementById("show").className="";
