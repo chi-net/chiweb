@@ -26,15 +26,22 @@
     </noscript>
     <div id="app"></div>
     <script>
+      setInterval(function(){
+        var time=1632110400;
+        document.getElementById("checkday").innerHTML=parseInt(parseInt(Math.round(new Date() / 1000) - time)/(60*60*24));
+			  document.getElementById("checkhour").innerHTML=parseInt((parseInt(Math.round(new Date() / 1000) - time)%(60*60*24)/(60*60)));
+			  document.getElementById("checkmin").innerHTML=parseInt(((parseInt(Math.round(new Date() / 1000) - time)%(60*60*24)%(60*60))/60));
+			  document.getElementById("checksec").innerHTML=parseInt(((parseInt(Math.round(new Date() / 1000) - time)%(60*60*24)%(60*60))%60));
+      },1000)
       setTimeout(function(){
         var inst = new mdui.Dialog("#tips");
         inst.open();
       },2000);
       function changeCopyright(){
-        if(document.getElementById("show").className=="hidden"){
-          document.getElementById("show").className="";
+        if(document.getElementById("copyright").className=="hidden"){
+          document.getElementById("copyright").className="";
         }else{
-          document.getElementById("show").className="hidden";
+          document.getElementById("copyright").className="hidden";
         }
       }
       </script>

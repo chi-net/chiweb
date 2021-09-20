@@ -27,7 +27,9 @@
       <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
     </card>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
-      Powered by chihuo2104.All rights reserved &copy;2018-{{new Date().getFullYear()}}
+      Powered by chihuo2104.All rights reserved &copy;2018-{{new Date().getFullYear()}}.<br>
+      Engined by <a href="cn.vuejs.org" target="blank">Vue</a>&amp;<a href="nodejs.org" target="blank">Node.js</a>&amp;<a href="webpack.org" target="blank">Webpack.</a>
+      本站已经苟且偷生了<span id="checkday">0</span>天<span id="checkhour">0</span>小时<span id="checkmin">0</span>分钟<span id="checksec">0</span>秒
     </div>
   </div>
 </template>
@@ -56,7 +58,7 @@ export default {
   margin:0 auto 0;
 }
 .hidden{
-  bottom:-20px !important;
+  bottom:-100px !important;
 }
 #chiimg{
   border-radius:256px;
@@ -76,6 +78,8 @@ html{
   bottom:0px;
   background-color:rgba(255,255,255,0.7);
   text-align:center;
+  padding:10px;
+  font-size:18px;
   transition:all .3s ease-in-out;
 }
 #show{
