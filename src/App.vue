@@ -5,9 +5,6 @@
       <div class="mdui-dialog-content">本站目前还正在开发中，为您展示的是正在开发的版本，本站暂定版本号：Moe Edition。（版本更新记录详见
       <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
       <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</div>
-      <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple" mdui-dialog-close>我知道了</button>
-      </div>
     </div>
     <card>
       <img src="./assets/icon.jpg" id="chiimg">
