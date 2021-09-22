@@ -61,7 +61,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
   justify-content: center;
 }
 
