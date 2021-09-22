@@ -1,29 +1,31 @@
 <template>
   <div id="app">
-    <card>
+    <Card>
       <img src="./assets/icon.jpg" id="chiimg">
       <h2>chihuo2104の小站</h2>
-      <tool-card>
-      <button class="mdui-btn-block blc3">&lt;上一张</button>
-      <button class="mdui-btn-block blc3">背景图片</button>
-      <button class="mdui-btn-block blc3">下一张&gt;</button>
-      </tool-card>
+      <ToolCard>
+        <div class="btn-group">
+          <button class="mdui-btn-block">&lt;上一张</button>
+          <button class="mdui-btn-block">背景图片</button>
+          <button class="mdui-btn-block">下一张&gt;</button>
+        </div>
+      </ToolCard>
       <div id="show">
-      <button class="mdui-btn-block" onclick='changeCopyright()'>显示版权页</button>
+        <button class="mdui-btn-block" onclick='changeCopyright()'>显示版权页</button>
       </div>
-    </card>
-        <card>
+    </Card>
+    <Card>
       <h1>个人网站</h1>
       <h1>提示！</h1>
       <h1>本站目前还正在开发中，为您展示的是正在开发的版本，本站暂定版本号：Moe Edition。（版本更新记录详见
-      <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
-      <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</h1>
+        <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
+        <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</h1>
       <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
-    </card>
-        <card>
+    </Card>
+    <Card>
       <h1>友情链接</h1>
       <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
-    </card>
+    </Card>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
       Powered by chihuo2104.All rights reserved &copy;2018-{{new Date().getFullYear()}}.<br>Chiweb Application Version:V3.0(Moe)[Preview Edition].Packaged Date:2021-09-20.<br>
       Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;<a href="//webpack.org" target="blank">Webpack.</a>
@@ -32,72 +34,90 @@
   </div>
 </template>
 <script>
-import card from './components/Card.vue';
-import tool_card from './components/ToolCard.vue';
+import Card from './components/Card.vue'
+import ToolCard from './components/ToolCard.vue'
 export default {
   name: 'App',
   components: {
-    card,
-    "tool-card":tool_card,
-  },
+    Card,
+    ToolCard
+  }
 }
 </script>
 
 <style>
-.blc3{
-  width:33%;
-  float:left;
+* {
+  box-sizing: border-box;
 }
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
 #app {
   font-family: "Noto Serif SC";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
+  justify-content: center;
 }
-.hidden{
-  bottom:-1000px !important;
+
+.hidden {
+  bottom: -1000px !important;
 }
-#chiimg{
-  border-radius:256px;
-  width:40%;
-  height:40%;
+
+#chiimg {
+  border-radius: 256px;
+  width: 40%;
 }
-@media screen and (min-width:768px){
-    html{
-      background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
-    }
-    #app{
-      margin:0 auto 0;
-    }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
+  }
+
+  #app {
+    margin: 0 auto 0;
+  }
 }
-@media screen and (max-width:768px){
-  html{
+
+@media screen and (max-width: 768px) {
+  body {
     background-image: url("https://akdc-1301312850.cos.ap-nanjing.myqcloud.com/P7ZBA%7B%5DHNF)6)ZAXE85%5DV%248.png");
   }
-  #app{
-    margin-top:48px;
+
+  #app {
+    margin-top: 48px;
+    display: block;
   }
 }
-html{
+
+html {
   background-attachment: fixed;
   background-size: 100% 100%;
-  overflow-x:hidden;
-  overflow-y:hidden;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
 }
-#copyright{
-  position:absolute;
-  width:100%;
-  bottom:0px;
-  background-color:rgba(255,255,255,0.7);
-  text-align:center;
-  padding:10px;
-  font-size:18px;
-  transition:all .3s ease-in-out;
+
+#copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
 }
-#show{
-    border-top:1px solid #000000;
-    padding-top:3px;
-    padding-bottom:3px;
-    display:block;
+
+#show {
+  border-top: 1px solid #000;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: block;
 }
 </style>
