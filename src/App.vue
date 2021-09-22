@@ -75,6 +75,10 @@ export default {
   min-height: 100vh;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 #chiimg {
   border-radius: 256px;
   width: 40%;
