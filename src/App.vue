@@ -131,4 +131,8 @@ html {
   padding-bottom: 3px;
   display: block;
 }
+
+#body{
+  background-color:rgba(255,255,255,0)
+}
 </style>
