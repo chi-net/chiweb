@@ -1,24 +1,9 @@
 # chiweb
+# based on Webpack & Vue & Jenkins & Node
+This Project used Jenkins CI System.
 
-## Project setup
-```
-npm install
-```
+Jenkins Address:[jenkins.chicdn.cn:9090](http://jenkins.chicdn.cn:9090)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+User Name:chiweb
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Password:chi2=web233
