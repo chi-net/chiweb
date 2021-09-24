@@ -72,6 +72,7 @@ export default {
   grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
   grid-auto-rows: max-content;
   justify-content: center;
+  background-color: rgba(255,255,255,0);
 }
 
 .hidden {
