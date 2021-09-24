@@ -133,6 +133,6 @@ html {
 }
 
 #body{
-  background-color:rgba(255,255,255,0)
+  background-color:rgba(255,255,255,0) !important;/*What's the f**k?!*/
 }
 </style>
