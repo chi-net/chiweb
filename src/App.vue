@@ -85,7 +85,7 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  html {
     background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
   }
 
@@ -95,7 +95,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  body {
+  html {
     background-image: url("https://akdc-1301312850.cos.ap-nanjing.myqcloud.com/P7ZBA%7B%5DHNF)6)ZAXE85%5DV%248.png");
   }
 
