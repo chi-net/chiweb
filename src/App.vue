@@ -64,6 +64,7 @@ export default {
   font-family: "Noto Serif SC";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rgba(255,255,255,0);
 }
 
 .container {
