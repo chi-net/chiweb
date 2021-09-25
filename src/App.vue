@@ -29,11 +29,11 @@
       </Card>
     </div>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
-      Powered by chihuo2104 &amp; Ray. All rights reserved &copy;2018-{{new Date().getFullYear()}}.
+      Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a> &amp; <a href="//raycoder.me" target="blank">Ray</a>. All rights reserved &copy;2018-{{new Date().getFullYear()}}.
       <br>
       Chiweb Application Version:V3.0(Moe)[Preview Edition].Packaged Date:2021-09-25.
       <br>
-      Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;<a href="//webpack.js.org" target="blank">Webpack</a>&<a target="_blank" href="//jenkins.io">Jenkins</a>.
+      Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;<a href="//webpack.js.org" target="blank">Webpack</a>&amp;<a target="_blank" href="//jenkins.io">Jenkins</a>.
       本站已经在互联网的角落苟且偷生了<span id="checkday">0</span>天<span id="checkhour">0</span>小时<span id="checkmin">0</span>分钟<span id="checksec">0</span>秒
     </div>
   </div>
@@ -82,18 +82,23 @@ html{
   border-radius: 256px;
   width: 40%;
 }
-.hidden {
-  display:none;
-}
 @media screen and (min-width: 768px) {
   html {
     background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
+    overflow-y:hidden;
   }
   #app {
     margin: 0 auto 0;
   }
   .container{
     grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
+  }
+  #copyright{
+    position: absolute;
+    z-index:9999999;
+  }
+  .hidden{
+    bottom:-200px !important;
   }
 }
 
@@ -108,6 +113,12 @@ html{
   .container{
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));;
   }
+  #copyright{
+    position:relative;
+  }
+  .hidden {
+    display:none;
+  }
 }
 
 html {
@@ -119,14 +130,13 @@ html {
 }
 
 #copyright {
-  position: relative;
-  width: 100%;
-  bottom: 0;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
   padding: 10px;
   font-size: 18px;
-  transition: all 0.3s ease-in-out;
+  width: 100%;
+  bottom: 0;
+  transition: all 2s ease-out;
 }
 
 #show {
