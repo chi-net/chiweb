@@ -54,7 +54,10 @@ export default {
 * {
   box-sizing: border-box;
 }
-
+html{
+  width:100%;
+  height:100%;
+}
 .btn-group {
   display: flex;
   justify-content: center;
@@ -70,28 +73,27 @@ export default {
 .container {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
   grid-auto-rows: max-content;
   justify-content: center;
   background-color: rgba(255,255,255,0);
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 #chiimg {
   border-radius: 256px;
   width: 40%;
 }
-
+.hidden {
+  display:none;
+}
 @media screen and (min-width: 768px) {
   html {
     background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
   }
-
   #app {
     margin: 0 auto 0;
+  }
+  .container{
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
   }
 }
 
@@ -99,10 +101,12 @@ export default {
   html {
     background-image: url("https://akdc-1301312850.cos.ap-nanjing.myqcloud.com/P7ZBA%7B%5DHNF)6)ZAXE85%5DV%248.png");
   }
-
   #app {
     margin-top: 48px;
     display: block;
+  }
+  .container{
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));;
   }
 }
 
@@ -132,7 +136,7 @@ html {
   display: block;
 }
 
-#body{
+body{
   background-color:rgba(255,255,255,0) !important;/*What's the f**k?!*/
 }
 </style>
