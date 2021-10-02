@@ -31,7 +31,7 @@
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
       Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a> &amp; <a href="//raycoder.me" target="blank">Ray</a>. All rights reserved &copy;2018-{{new Date().getFullYear()}}.
       <br>
-      Chiweb Application Version:V3.0(Moe)[Preview Edition].Packaged Date:2021-09-25.
+      Chiweb Application Version:V3.0(Moe)[Preview Edition].Packaged Date:2021-10-02.
       <br>
       Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;<a href="//webpack.js.org" target="blank">Webpack</a>&amp;<a target="_blank" href="//jenkins.io">Jenkins</a>.
       本站已经在互联网的角落苟且偷生了<span id="checkday">0</span>天<span id="checkhour">0</span>小时<span id="checkmin">0</span>分钟<span id="checksec">0</span>秒
