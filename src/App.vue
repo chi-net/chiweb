@@ -25,7 +25,7 @@
       </Card>
       <Card>
         <h1>友情链接</h1>
-        <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
+        <h2>占位符啦啦啦啦啦</h2>
       </Card>
     </div>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
