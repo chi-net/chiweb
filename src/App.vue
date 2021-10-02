@@ -84,7 +84,6 @@ html{
 }
 @media screen and (min-width: 768px) {
   html {
-    background-image: url("//cdn.akdoctor.club/79315b2c-8056-4ae8-8b3c-d72c14938064.jpg");
     overflow-y:hidden;
   }
   #app {
@@ -103,9 +102,6 @@ html{
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    background-image: url("https://akdc-1301312850.cos.ap-nanjing.myqcloud.com/P7ZBA%7B%5DHNF)6)ZAXE85%5DV%248.png");
-  }
   #app {
     margin-top: 48px;
     display: block;
@@ -119,14 +115,6 @@ html{
   .hidden {
     display:none;
   }
-}
-
-html {
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  overflow-x: hidden;
-  word-wrap: break-word;
-  word-break: normal;
 }
 
 #copyright {
@@ -144,9 +132,5 @@ html {
   padding-top: 3px;
   padding-bottom: 3px;
   display: block;
-}
-
-body{
-  background-color:rgba(255,255,255,0) !important;/*What's the f**k?!*/
 }
 </style>
