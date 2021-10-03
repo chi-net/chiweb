@@ -97,7 +97,7 @@ html{
     z-index:9999999;
   }
   .hidden{
-    bottom:-200px !important;
+    bottom:calc(3px - 15%) !important;
   }
 }
 
@@ -124,7 +124,7 @@ html{
   font-size: 18px;
   width: 100%;
   bottom: 0;
-  transition: all 2s ease-out;
+  transition:all 3s ease-in;
 }
 
 #show {
