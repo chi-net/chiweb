@@ -124,7 +124,7 @@ html{
   font-size: 18px;
   width: 100%;
   bottom: 0;
-  transition:all 3s ease-in;
+  transition:all 2s ease-in-out;
 }
 
 #show {
