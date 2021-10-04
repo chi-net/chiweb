@@ -34,7 +34,8 @@
       Chiweb Application Version:V3.0(Moe)[Preview Edition].Packaged Date:2021-10-02.
       <br>
       Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;<a href="//webpack.js.org" target="blank">Webpack</a>&amp;<a target="_blank" href="//jenkins.io">Jenkins</a>.
-      本站已经在互联网的角落苟且偷生了<span id="checkday">0</span>天<span id="checkhour">0</span>小时<span id="checkmin">0</span>分钟<span id="checksec">0</span>秒
+      本站已经在互联网的角落苟且偷生了<span id="checkday">0</span>天<span id="checkhour">0</span>小时<span id="checkmin">0</span>分钟<span id="checksec">0</span>秒<br>
+      <a href="https://icp.gov.moe/?keyword=20212104" target="_blank">萌ICP备20212104号</a>
     </div>
   </div>
 </template>
