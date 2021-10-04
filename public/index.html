@@ -21,7 +21,8 @@
   integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
   crossorigin="anonymous"
 ></script>
-<style>html { font-family: "Noto Serif SC" !important;}
+<style>
+html { font-family: "Noto Serif SC" !important;}
 #friendlyview{ 
   margin:20% auto 0;
   border-radius:3px;
@@ -58,6 +59,17 @@ body{
     <title>chihuo2104の小站</title>
   </head>
   <body>
+    <script>
+      function isIE() { //ie?
+        if (!!window.ActiveXObject || "ActiveXObject" in window)
+          return true;
+        else
+          return false;
+      }
+      if(isIE()){
+        document.getElementsByTagName("html").style="overflow-x:scroll";
+      }
+    </script>
     <noscript>
       <div id="friendlyview">
         <h1 style="text-align: center;">提示</h1>
