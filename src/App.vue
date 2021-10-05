@@ -56,9 +56,16 @@ export default {
 * {
   box-sizing: border-box;
 }
-a,a:hover,a:visited,a:active{
+a,a:visited,a:active{
   text-decoration: none !important;
   color:#00a !important;
+}
+a:hover{
+  text-decoration: underline !important;
+  color:#0af !important;
+}
+a{
+  transition:all 0.8s ease-in-out;
 }
 html{
   width:100%;
