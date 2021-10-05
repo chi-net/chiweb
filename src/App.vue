@@ -124,8 +124,8 @@ html{
 }
 
 #copyright {
-  background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
   text-align: center;
   padding: 10px;
   font-size: 18px;

@@ -13,10 +13,10 @@ export default {
   border-radius: 5px;
   /* border: 3px solid #eee; */
   padding:10px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 1px 2px 3px;
   margin: 10px;
   /*你们最爱的毛玻璃来辣！ */
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
 }
 </style>
