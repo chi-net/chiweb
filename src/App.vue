@@ -65,7 +65,7 @@ a:hover{
   color:#0af !important;
 }
 a{
-  transition:all 0.8s ease-in-out;
+  transition: color 0.8s ease-in-out !important;
 }
 html{
   width:100%;
@@ -81,6 +81,7 @@ html{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:rgba(255,255,255,0);
+  transition:all 2s ease-in-out;
 }
 
 .container {
