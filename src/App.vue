@@ -56,6 +56,10 @@ export default {
 * {
   box-sizing: border-box;
 }
+a,a:hover,a:visited,a:active{
+  text-decoration: none !important;
+  color:#00a !important;
+}
 html{
   width:100%;
   height:100%;
@@ -120,7 +124,8 @@ html{
 }
 
 #copyright {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
   text-align: center;
   padding: 10px;
   font-size: 18px;
