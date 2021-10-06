@@ -1,20 +1,22 @@
 <template>
   <div id="app">
     <div class="container">
-      <Card>
-        <img src="./assets/icon.jpg" id="chiimg">
-        <h2>chihuo2104の小站</h2>
-        <ToolCard>
+      <div class="toolbar">
+        <Card>
+          <img src="./assets/icon.jpg" id="chiimg">
+          <h2>chihuo2104の小站</h2>
+        </Card>
+        <Card>
           <div class="btn-group">
-            <button class="mdui-btn-block">&lt;上一张</button>
-            <button class="mdui-btn-block">背景图片</button>
-            <button class="mdui-btn-block">下一张&gt;</button>
+            <a href="javascript:previousPoster()">&lt;上一张</a>|
+            <a href="javascript:backgroundPosterChoose()">背景图片</a>|
+            <a href="javascript:nextPoster()">下一张&gt;</a>
           </div>
-        </ToolCard>
-        <div id="show">
-          <button class="mdui-btn-block" onclick='changeCopyright()'>显示版权页</button>
-        </div>
-      </Card>
+        </Card>
+        <Card>
+          <a href='javascript:changeCopyright()' id="showcopyright">显示版权页</a>
+        </Card>
+      </div>
       <Card>
         <h1>个人网站</h1>
         <h1>提示！</h1>
@@ -42,12 +44,10 @@
 </template>
 <script>
 import Card from './components/Card.vue'
-import ToolCard from './components/ToolCard.vue'
 export default {
   name: 'App',
   components: {
-    Card,
-    ToolCard
+    Card
   }
 }
 </script>
@@ -72,10 +72,14 @@ html{
   height:100%;
 }
 .btn-group {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  display:block;
 }
-
+.btn-group a{
+  text-align:center;
+  width:33%;
+}
 #app {
   font-family: "Noto Serif SC";
   -webkit-font-smoothing: antialiased;
@@ -142,10 +146,11 @@ html{
   transition:all 2s ease-in-out;
 }
 
-#show {
-  border-top: 1px solid #000;
+#showcopyright {
   padding-top: 3px;
   padding-bottom: 3px;
   display: block;
+  text-decoration: none !important;
+  cursor:pointer;
 }
 </style>
