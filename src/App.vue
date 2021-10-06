@@ -164,6 +164,8 @@ html{
   font-size: 18px;
   width: 100%;
   bottom: 0;
+  left:0;
+  right:0;
   transition:all 2s ease-in-out;
 }
 
