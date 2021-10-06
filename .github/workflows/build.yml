@@ -31,5 +31,8 @@ jobs:
           npm install
           npm run build
           zip dist/
-      # Runs a set of commands using the runners shell
-        with: dist.zip
+      - name: cleanup
+        uses: actions/upload-artifact@master
+        with:
+            name: moe.html
+            path: file
