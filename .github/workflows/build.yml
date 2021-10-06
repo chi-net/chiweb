@@ -31,8 +31,10 @@ jobs:
           npm install
           npm run build
           zip -r -q -o dist.zip dist/
+          mkdir a
+          mv dist.zip a
       - name: cleanup
         uses: actions/upload-artifact@master
         with:
             name: dist.zip
-            path: ./
+            path: a
