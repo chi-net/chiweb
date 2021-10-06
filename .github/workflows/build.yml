@@ -30,7 +30,7 @@ jobs:
         run: |
           npm install
           npm run build
-          zip dist/
+          zip dist
       - name: cleanup
         uses: actions/upload-artifact@master
         with:
