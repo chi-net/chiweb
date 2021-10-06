@@ -34,5 +34,4 @@ jobs:
       - name: cleanup
         uses: actions/upload-artifact@master
         with:
-            name: moe.html
-            path: file
+            name: dist.zip
