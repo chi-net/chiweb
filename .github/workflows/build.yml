@@ -32,9 +32,18 @@ jobs:
           npm run build
           zip -r -q -o dist.zip dist/
           mkdir a
-          mv dist.zip a
+          cp dist.zip a/dist.zip
       - name: cleanup
         uses: actions/upload-artifact@master
         with:
             name: dist.zip
             path: a
+      - name: Automatic Releases
+        uses: marvinpinto/action-automatic-releases@v1.2.1
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Auto Build in Github Action"
+          files: |
+            dist.zip
