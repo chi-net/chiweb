@@ -17,19 +17,24 @@
           <a href='javascript:changeCopyright()' id="showcopyright">显示版权页</a>
         </Card>
       </div>
-      <Card>
-        <h1>个人网站</h1>
-        <h1>提示！</h1>
-        <h1>本站目前还正在开发中，为您展示的是正在开发的版本，本站暂定版本号：Moe Edition。（版本更新记录详见
-          <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
-          <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</h1>
-        <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
-      </Card>
-      <Card>
-        <h1>友情链接</h1>
-        <h2>已加入萌备，备案号：萌ICP备-20212104号</h2>
-        <h2>占位符啦啦啦啦啦</h2>
-      </Card>
+      <div id="personal"  class="allwidth">
+        <Card class="scroll">
+          <h1>个人网站</h1>
+          <h1>提示！</h1>
+          <h1>本站目前还正在开发中，为您展示的是正在开发的版本，本站暂定版本号：Moe Edition。（版本更新记录详见
+            <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
+            <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</h1>
+          <h2>占位符啦啦啦啦啦<br><br><br><br><br></h2>
+          <!-- <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br><br><br><br><br> -->
+        </Card>
+      </div>
+      <div id="friends"  class="allwidth">
+        <Card class="scroll">
+          <h1>友情链接</h1>
+          <h2>已加入萌备，备案号：萌ICP备-20212104号</h2>
+          <h2>占位符啦啦啦啦啦</h2>
+        </Card>
+      </div>
     </div>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
       Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a> &amp; <a href="//raycoder.me" target="blank">Ray</a>. All rights reserved &copy;2018-{{new Date().getFullYear()}}.
@@ -53,6 +58,15 @@ export default {
 </script>
 
 <style>
+h1{
+  font-size:1.5em;
+}
+h2{
+  font-size:1.3em;
+}
+div{
+  font-size:1.2em;
+}
 * {
   box-sizing: border-box;
 }
@@ -115,7 +129,13 @@ html{
     z-index:9999999;
   }
   .hidden{
-    bottom:calc(3px - 18%) !important;
+    bottom:calc(3px - 25%) !important;
+  }
+  .allwidth{
+    height:100%;
+  }
+  .scroll{
+    overflow-y:scroll;
   }
 }
 
@@ -126,6 +146,7 @@ html{
   }
   .container{
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));;
+    grid-template-rows: auto;
   }
   #copyright{
     position:relative;
