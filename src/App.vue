@@ -58,15 +58,6 @@ export default {
 </script>
 
 <style>
-h1{
-  font-size:1.5em;
-}
-h2{
-  font-size:1.3em;
-}
-div,Card,#copyright{
-  font-size:1.2em;
-}
 * {
   box-sizing: border-box;
 }
@@ -114,7 +105,7 @@ html{
   border-radius: 256px;
   width: 40%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {/*大屏适配 */
   html {
     overflow-y:hidden;
   }
@@ -137,9 +128,18 @@ html{
   .scroll{
     overflow-y:scroll;
   }
+  h1{
+    font-size:1.5em;
+  }
+  h2{
+    font-size:1.3em;
+  }
+  div,Card,#copyright{
+    font-size:1.2em;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {/*小屏适配* */
   #app {
     margin-top: 48px;
     display: block;
