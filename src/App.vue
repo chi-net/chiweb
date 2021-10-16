@@ -86,7 +86,7 @@ html{
   .scroll{
     overflow-y:scroll;
   }
-  h1{
+  /* h1{
     font-size:1.5em;
   }
   h2{
@@ -94,7 +94,7 @@ html{
   }
   div,Card,#copyright{
     font-size:1.2em;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {/*小屏适配* */

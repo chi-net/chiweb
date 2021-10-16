@@ -15,9 +15,6 @@ const store = new Vuex.Store({
     }
   }
 })
-Vue.prototype.changeCH = function () {
-  this.$store.changeCH()
-}
 new Vue({
   render: h => h(App),
   store: store

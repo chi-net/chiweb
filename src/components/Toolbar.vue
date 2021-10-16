@@ -12,7 +12,7 @@
       </div>
     </Card>
     <Card>
-      <a href='javascript:changeCopyright()' id="showcopyright">显示版权页</a>
+      <a @click="changeCH()" id="showcopyright">显示版权页</a>
     </Card>
   </div>
 </template>
@@ -22,6 +22,12 @@ export default {
   name: 'Toolbar',
   compoents: {
     Card
+  },
+  methods: {
+    changeCH () {
+      this.$store.commit('changeCH')
+      console.log('What>>')
+    }
   }
 }
 </script>
