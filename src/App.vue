@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 * {
   box-sizing: border-box;
 }
@@ -65,10 +65,10 @@ html{
 
 @media screen and (min-width: 768px) {/*大屏适配 */
   html {
-    overflow-y:hidden;
+    overflow-y:hidden !important;
   }
   #app {
-    margin: 0 auto 0;
+    margin: 0 0 0;
   }
   .container{
     grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
