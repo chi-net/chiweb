@@ -1,40 +1,9 @@
 <template>
   <div id="app">
     <div class="container">
-      <div class="toolbar">
-        <Card>
-          <img src="./assets/icon.jpg" id="chiimg">
-          <h2>chihuo2104の小站</h2>
-        </Card>
-        <Card>
-          <div class="btn-group">
-            <a href="javascript:previousPoster()">&lt;上一张</a>|
-            <a href="javascript:backgroundPosterChoose()">背景图片</a>|
-            <a href="javascript:nextPoster()">下一张&gt;</a>
-          </div>
-        </Card>
-        <Card>
-          <a href='javascript:changeCopyright()' id="showcopyright">显示版权页</a>
-        </Card>
-      </div>
-      <div id="personal"  class="allwidth">
-        <Card class="scroll">
-          <h1>个人网站</h1>
-          <h2>提示！</h2>
-          <div>本站目前还正在开发中，为您展示的是正在开发的版本，本站暂定版本号：Moe Edition。（版本更新记录详见
-            <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>）建议您去我的
-            <a href="//blog.chihuo2104.dev" target="_blank">blog</a>逛一下~</div>
-          <div>占位符啦啦啦啦啦<br><br><br><br><br></div>
-          <!-- <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br><br><br><br><br> -->
-        </Card>
-      </div>
-      <div id="friends"  class="allwidth">
-        <Card class="scroll">
-          <h1>友情链接</h1>
-          <h2>已加入萌备，备案号：萌ICP备-20212104号</h2>
-          <h2>占位符啦啦啦啦啦</h2>
-        </Card>
-      </div>
+      <Toolbar></Toolbar>
+      <IndexCard></IndexCard>
+      <Friendlink></Friendlink>
     </div>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
       Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a> &amp; <a href="//raycoder.me" target="blank">Ray</a>. All rights reserved &copy;2018-{{new Date().getFullYear()}}.
@@ -48,16 +17,18 @@
   </div>
 </template>
 <script>
-import Card from './components/Card.vue'
+import IndexCard from './components/IndexCard.vue';
+import Toolbar from './components/Toolbar.vue';
+import Friendlink from './components/Friendlink.vue';
 export default {
   name: 'App',
   components: {
-    Card
+    Toolbar,IndexCard,Friendlink
   }
 }
 </script>
 
-<style>
+<style scoped>
 * {
   box-sizing: border-box;
 }
