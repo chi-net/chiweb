@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Vuex from 'vuex'
+import Card from './components/Card.vue'
 Vue.config.productionTip = false
 Vue.use(Vuex)
+Vue.component('Card', Card)
 const store = new Vuex.Store({
   state: {
     isCopyrightHidden: true

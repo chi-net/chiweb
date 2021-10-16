@@ -47,15 +47,6 @@ html{
   width:100%;
   height:100%;
 }
-.btn-group {
-  /* display: flex;
-  justify-content: center; */
-  display:block;
-}
-.btn-group a{
-  text-align:center;
-  width:33%;
-}
 #app {
   font-family: "Noto Serif SC";
   -webkit-font-smoothing: antialiased;
@@ -72,10 +63,6 @@ html{
   background-color: rgba(255,255,255,0);
 }
 
-#chiimg {
-  border-radius: 256px;
-  width: 40%;
-}
 @media screen and (min-width: 768px) {/*大屏适配 */
   html {
     overflow-y:hidden;

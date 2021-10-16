@@ -1,5 +1,5 @@
 <template>
-  <div id="personal"  class="allwidth">
+  <div id="app"  class="allwidth">
     <Card class="scroll">
       <h1>个人网站</h1>
       <h2>提示！</h2>
@@ -18,5 +18,14 @@ export default {
 }
 </script>
 <style>
-
+Card {/*过渡期使用，可能删除 */
+  border-radius: 5px;
+  /* border: 3px solid #eee; */
+  padding:10px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 1px 2px 3px;
+  margin: 10px;
+  /*你们最爱的毛玻璃来辣！ */
+  backdrop-filter: blur(15px);
+}
 </style>
