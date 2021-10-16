@@ -17,13 +17,13 @@
   </div>
 </template>
 <script>
-import IndexCard from './components/IndexCard.vue';
-import Toolbar from './components/Toolbar.vue';
-import Friendlink from './components/Friendlink.vue';
+import IndexCard from './components/IndexCard.vue'
+import Toolbar from './components/Toolbar.vue'
+import Friendlink from './components/Friendlink.vue'
 export default {
   name: 'App',
   components: {
-    Toolbar,IndexCard,Friendlink
+    Toolbar, IndexCard, Friendlink
   }
 }
 </script>
