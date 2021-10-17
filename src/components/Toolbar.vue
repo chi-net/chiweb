@@ -29,6 +29,25 @@ export default {
       console.log('What>>')
     },
     poster (action) {
+      switch (action) {
+        case 'previous' :
+          // do something qwq
+          console.log('action.previous')
+          // change the background gallery to previous page.
+          break
+        case 'next' :
+          // do something qwq
+          console.log('action.next')
+          // change the background gallery to next page normally in 2s
+          break
+        case 'change' :
+          // do something qwq
+          console.log('action.change')
+          // change the background photo gallery.
+          break
+        default :
+      // nothing in this space!
+      }
       alert('开发中qwq......')
     }
   }
