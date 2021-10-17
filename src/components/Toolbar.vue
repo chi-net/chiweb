@@ -17,6 +17,8 @@
   </div>
 </template>
 <script>
+/* eslint-disable */
+/* What a s**t for you! */
 import Card from './Card.vue'
 export default {
   name: 'Toolbar',
