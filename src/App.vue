@@ -48,7 +48,8 @@ a{
 html{
   width:100%;
   height:100%;
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
+  /* background-image:none !important;/*Gallery写完之后是很有用哒~ */
 }
 #app {
   font-family: "Noto Serif SC";
