@@ -1,11 +1,11 @@
 <template>
   <div id="app">
+    <Gallery></Gallery>
     <div class="container">
       <Toolbar></Toolbar>
       <IndexCard></IndexCard>
       <Friendlink></Friendlink>
     </div>
-    <Gallery></Gallery>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
       Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a> &amp; <a href="//raycoder.me" target="blank">Ray</a>. All rights reserved &copy;2018-{{new Date().getFullYear()}}.
       <br>
@@ -48,6 +48,7 @@ a{
 html{
   width:100%;
   height:100%;
+  background-color: #fff !important;
 }
 #app {
   font-family: "Noto Serif SC";
@@ -55,7 +56,7 @@ html{
   -moz-osx-font-smoothing: grayscale;
   background-color:rgba(255,255,255,0);
   transition:all 2s ease-in-out;
-  z-index:20;
+  z-index:9999;
 }
 
 .container {
@@ -63,6 +64,7 @@ html{
   display: grid;
   grid-auto-rows: max-content;
   justify-content: center;
+  z-index: 9999;
   background-color: rgba(255,255,255,0);
 }
 
@@ -89,7 +91,7 @@ html{
   .scroll{
     overflow-y:scroll;
   }
-  /* h1{
+  h1{
     font-size:1.5em;
   }
   h2{
@@ -97,7 +99,7 @@ html{
   }
   div,Card,#copyright{
     font-size:1.2em;
-  } */
+  }
 }
 
 @media screen and (max-width: 768px) {/*小屏适配* */
