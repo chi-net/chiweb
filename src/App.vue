@@ -72,6 +72,8 @@ html{
 @media screen and (min-width: 768px) {/*大屏适配 */
   html {
     overflow-y:hidden !important;
+    /*过渡期使用 */
+    background-image:url("./assets/gallerys/arknights/bg-1.jpg");
   }
   #app {
     margin: 0 0 0;
@@ -104,6 +106,10 @@ html{
 }
 
 @media screen and (max-width: 768px) {/*小屏适配* */
+  html{
+    /*过渡期使用 */
+    background-image:url("./assets/gallerys/arknights/sm-1.png");
+  }
   #app {
     margin-top: 48px;
     display: block;
