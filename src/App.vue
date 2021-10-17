@@ -5,6 +5,7 @@
       <IndexCard></IndexCard>
       <Friendlink></Friendlink>
     </div>
+    <Gallery></Gallery>
     <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
       Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a> &amp; <a href="//raycoder.me" target="blank">Ray</a>. All rights reserved &copy;2018-{{new Date().getFullYear()}}.
       <br>
@@ -20,10 +21,11 @@
 import IndexCard from './components/IndexCard.vue'
 import Toolbar from './components/Toolbar.vue'
 import Friendlink from './components/Friendlink.vue'
+import Gallery from './components/Gallery.vue'
 export default {
   name: 'App',
   components: {
-    Toolbar, IndexCard, Friendlink
+    Toolbar, IndexCard, Friendlink, Gallery
   }
 }
 </script>
@@ -53,6 +55,7 @@ html{
   -moz-osx-font-smoothing: grayscale;
   background-color:rgba(255,255,255,0);
   transition:all 2s ease-in-out;
+  z-index:20;
 }
 
 .container {
