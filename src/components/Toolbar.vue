@@ -6,9 +6,9 @@
     </Card>
     <Card>
       <div class="btn-group">
-        <a href="javascript:previousPoster()">&lt;上一张</a>|
-        <a href="javascript:backgroundPosterChoose()">背景图片</a>|
-        <a href="javascript:nextPoster()">下一张&gt;</a>
+        <a @click="poster('previous')">&lt;上一张</a>|
+        <a @click="poster('change')">背景图片</a>|
+        <a @click="poster('next')">下一张&gt;</a>
       </div>
     </Card>
     <Card>
@@ -27,6 +27,9 @@ export default {
     changeCH () {
       this.$store.commit('changeCH')
       console.log('What>>')
+    },
+    poster (action) {
+      alert('开发中qwq......')
     }
   }
 }
