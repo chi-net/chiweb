@@ -14,7 +14,6 @@
       <div id="app"></div>
       <script>
       setInterval(function(){var time=1632110400;document.getElementById("checkday").innerHTML=parseInt(parseInt(Math.round(new Date() / 1000) - time)/(60*60*24));document.getElementById("checkhour").innerHTML=parseInt((parseInt(Math.round(new Date() / 1000) - time)%(60*60*24)/(60*60)));document.getElementById("checkmin").innerHTML=parseInt(((parseInt(Math.round(new Date() / 1000) - time)%(60*60*24)%(60*60))/60));document.getElementById("checksec").innerHTML=parseInt(((parseInt(Math.round(new Date() / 1000) - time)%(60*60*24)%(60*60))%60));},1000);
-      function changeCopyright(){if(document.getElementById("copyright").className=="hidden"){document.getElementById("copyright").className="";}else{document.getElementById("copyright").className="hidden";}}
       </script>
       <a href="https://icp.gov.moe/?keyword=20212104" target="_blank">萌ICP备20212104号</a>
   </body>
