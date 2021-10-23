@@ -14,7 +14,7 @@ const store = new Vuex.Store({
         sm: ['1.png'],
         bg: ['1.jpg']
       },
-      gensin: { // 哦不原神找不到什么沙雕图片......
+      genshin: { // 哦不原神找不到什么沙雕图片......
         sm: ['paimon1.png'],
         bg: ['']
     }
