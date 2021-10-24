@@ -11,6 +11,37 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
+      alive: {
+        day: 0,
+        hour: 0,
+        min: 0,
+        sec: 0
+      },
+      starttime: 1632110400
+    }
+  },
+  mounted () {
+    this.timer = setInterval(() => {
+      this.alive = {
+        day: parseInt(parseInt(Math.round(new Date() / 1000) - this.starttime) / (60 * 60 * 24)),
+        hour: parseInt((parseInt(Math.round(new Date() / 1000) - this.starttime) % (60 * 60 * 24) / (60 * 60))),
+        min: parseInt(((parseInt(Math.round(new Date() / 1000) - this.starttime) % (60 * 60 * 24) % (60 * 60)) / 60)),
+        sec: parseInt(((parseInt(Math.round(new Date() / 1000) - this.starttime) % (60 * 60 * 24) % (60 * 60)) % 60))
+      }
+    }, 1000)
+  },
+  destoryed () {
+    clearInterval(this.timer)
+  },
+  computed: {
+    aliveshow: {
+      get () {
+        return this.alive.day + '天' + this.alive.hour + '小时' + this.alive.min + '分' + this.alive.sec + '秒'
+      }
+    }
+  }
 }
 </script>
 <style scoped>
