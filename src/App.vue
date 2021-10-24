@@ -48,6 +48,9 @@ export default {
       }
     }, 1000)
   },
+  destoryed () {
+    clearInterval(this.timer)
+  },
   computed: {
     aliveshow: {
       get () {
