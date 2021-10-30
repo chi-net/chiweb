@@ -4,11 +4,12 @@ import Vuex from 'vuex'
 import Card from './components/Card.vue'
 // import Storage from './storage'
 Vue.config.productionTip = false
-Vue.use(Vuex)
 Vue.component('Card', Card)
+Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     isCopyrightHidden: true,
+    development: false,
     gallerys: {
       arknights: {
         sm: ['1.png'],
