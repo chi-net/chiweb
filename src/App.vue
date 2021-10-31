@@ -34,9 +34,11 @@ a,a:visited,a:active{
 a:hover{
   text-decoration: underline !important;
   color:#0af !important;
+  font-size: 1.3em;
 }
 a{
   transition: color 0.8s ease-in-out !important;
+  transition: font-size 0.8s ease-in-out !important;
 }
 html{
   width:100%;
