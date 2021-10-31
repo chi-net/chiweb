@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="toolbar">
     <Card>
       <img src="../assets/icon.jpg" id="chiimg">
       <h2>{{$t('title')}}</h2>
@@ -65,6 +65,9 @@ export default {
 }
 </script>
 <style scoped>
+#toolbar{
+  overflow-y: scroll !important;
+}
 .btn-group {
   /* display: flex;
   justify-content: center; */
@@ -82,7 +85,7 @@ export default {
   display:block;
   cursor:pointer;
 }
-#translations div{
-  width: calc(33% - 1px);
+#translations-img svg{
+  height: 32px;
 }
 </style>
