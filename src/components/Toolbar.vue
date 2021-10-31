@@ -6,13 +6,13 @@
     </Card>
     <Card>
       <div class="btn-group">
-        <a @click="poster('previous')">&lt;上一张</a>|
-        <a @click="poster('change')">背景图片</a>|
-        <a @click="poster('next')">下一张&gt;</a>
+        <a @click="poster('previous')">&lt;{{$t('previous')}}</a>|
+        <a @click="poster('change')">{{$t('backgroundimage')}}</a>|
+        <a @click="poster('next')">{{$t('next')}}&gt;</a>
       </div>
     </Card>
     <Card>
-      <a @click="changeCH()" id="showcopyright">显示版权页</a>
+      <a @click="changeCH()" id="showcopyright">{{$t('showcpr')}}</a>
     </Card>
   </div>
 </template>
