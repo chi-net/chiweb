@@ -19,7 +19,8 @@ export default {
     and: 'and',
     statement2: '.',
     showalive: 'This site has been in the web for ',
-    times: '{day} days,{hour} hours,{min} minutes and {sec} seconds.'
+    times: '{day} days,{hour} hours,{min} minutes and {sec} seconds.',
+    moenum: 'Moeicp No.20212104'
   },
   cn: {
     friendlink: '友情链接',
@@ -41,6 +42,7 @@ export default {
     and: '和',
     statement2: '所有',
     showalive: '本站已经在互联网的角落苟且偷生了',
-    times: '{day}天{hour}小时{min}分{sec}秒'
+    times: '{day}天{hour}小时{min}分{sec}秒',
+    moenum: '萌ICP备-20212104号'
   }
 }
