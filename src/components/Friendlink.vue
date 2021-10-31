@@ -6,7 +6,7 @@
         <a :href="i.site" target="blank" :key="i.site">{{i.name}}</a><br>
       </div>
       <h2>{{$t('moeicp')}}</h2>
-      <h2>占位符啦啦啦啦啦</h2>
+      <h2>{{$t('zwf')}}</h2>
     </Card>
   </div>
 </template>

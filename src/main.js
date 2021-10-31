@@ -11,7 +11,7 @@ Vue.use(Vuex)
 Vue.use(VueI18n)
 console.log(messages)
 const i18n = new VueI18n({
-  locale: 'cn',
+  locale: 'en',
   messages
 })
 Vue.use(i18n)
