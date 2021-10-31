@@ -16,7 +16,7 @@ export default {
     statement1: 'Copyright statement: Some of the background copyright by ',
     hy: 'Shanghai Hypergryph Network Technology Co,.Ltd',
     mhy: 'Shanghai Mihoyo Network Technology Co,.Ltd',
-    and: 'and',
+    and: ' and ',
     statement2: '.',
     showalive: 'This site has been in the web for ',
     times: '{day} days,{hour} hours,{min} minutes and {sec} seconds.',
