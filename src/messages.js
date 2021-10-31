@@ -12,7 +12,14 @@ export default {
     backgroundimage: 'Background Images',
     next: 'Next',
     showcpr: 'Show Copyright Statement',
-    title: 'chihuo2104\' s website'
+    title: 'chihuo2104\' s website',
+    statement1: 'Copyright statement: Some of the background copyright by ',
+    hy: 'Shanghai Hypergryph Network Technology Co,.Ltd',
+    mhy: 'Shanghai Mihoyo Network Technology Co,.Ltd',
+    and: 'and',
+    statement2: '.',
+    showalive: 'This site has been in the web for ',
+    times: '{day} days,{hour} hours,{min} minutes and {sec} seconds.'
   },
   cn: {
     friendlink: '友情链接',
@@ -27,6 +34,13 @@ export default {
     backgroundimage: '背景图片',
     next: '下一张',
     showcpr: '显示版权页',
-    title: 'chihuo2104の小站'
+    title: 'chihuo2104の小站',
+    statement1: '版权声明：部分背景图片版权由',
+    hy: '上海市鹰角网络科技有限公司',
+    mhy: '上海市米哈游影铁科技有限公司',
+    and: '和',
+    statement2: '所有',
+    showalive: '本站已经在互联网的角落苟且偷生了',
+    times: '{day}天{hour}小时{min}分{sec}秒'
   }
 }
