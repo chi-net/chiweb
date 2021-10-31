@@ -2,7 +2,7 @@
   <div id="app">
     <Card>
       <img src="../assets/icon.jpg" id="chiimg">
-      <h2>chihuo2104の小站</h2>
+      <h2>{{$t('title')}}</h2>
     </Card>
     <Card>
       <div class="btn-group">
@@ -13,6 +13,11 @@
     </Card>
     <Card>
       <a @click="changeCH()" id="showcopyright">{{$t('showcpr')}}</a>
+    </Card>
+    <Card id="translations">
+      <div id="translations-img"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg></div>
+      <div id="zh" @click="locate('cn')">简体中文</div>
+      <div id="en" @click="locate('en')">English</div>
     </Card>
   </div>
 </template>
@@ -29,6 +34,10 @@ export default {
     changeCH () {
       this.$store.commit('changeCH')
       console.log('What>>')
+    },
+    locate (lang) {
+      this.$i18n.locale = lang
+      console.log(this.$i18n.locale)
     },
     poster (action) {
       switch (action) {
@@ -68,5 +77,12 @@ export default {
 #chiimg {
   border-radius: 256px;
   width: 40%;
+}
+#translations{
+  display:block;
+  cursor:pointer;
+}
+#translations div{
+  width: calc(33% - 1px);
 }
 </style>
