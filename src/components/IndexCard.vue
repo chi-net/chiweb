@@ -3,7 +3,7 @@
     <Card class="scroll">
       <h1>{{$t('personalweb')}}</h1>
       <div v-if="checkdate(10,24)">Happy 1024 Coding!🎉</div>
-      <div v-if="checkdate(11,1)">Happy Halloween!🎃🎉</div>
+      <div v-if="checkdate(10,31)">Happy Halloween!🎃🎉</div>
       <div v-if="checkdate(12,25)">Merry Christmas!🎅🎉</div>
       <div v-if="checkdate(10,14)">建站{{(new Date().getFullYear()) - 2018}}周年啦！</div>
       <h2>{{$t('tips')}}</h2>
