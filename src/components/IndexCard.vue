@@ -9,7 +9,7 @@
       <h2>{{$t('tips')}}</h2>
       <div>
         {{$t('developing1')}}
-        <a href="//history.moekonnyaku.com/newer-log.html" target="_blank">history.moekonnyaku.com/newer-log.html</a>
+        <a href="//history.chihuo2104.dev/newer-log.html" target="_blank">history.chihuo2104.dev/newer-log.html</a>
         {{$t('developing2')}}
         <a href="//blog.chihuo2104.dev" target="_blank">blog</a>
         {{$t('developing3')}}
