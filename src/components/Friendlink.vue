@@ -3,7 +3,7 @@
     <Card class="scroll">
       <h1>{{$t('friendlink')}}</h1>
       <div v-for="i in links" :key="i.name">
-        <a :href="i.site" target="_blank" :key="i.site">{{i.name}}</a><br>
+        <a :href="i.site" target="_blank" :key="i.site" :title="i.describe">{{i.name}}</a><br>
       </div>
       <p>{{$t('moeicp')}}</p>
       <p>{{$t('zwf')}}</p>
