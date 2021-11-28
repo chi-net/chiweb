@@ -91,4 +91,8 @@ export default {
 .chose{
   color: red !important;
 }
+#translations {
+  display: flex;
+  justify-content: center;
+}
 </style>
