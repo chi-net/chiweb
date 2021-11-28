@@ -1,6 +1,7 @@
 <template>
   <div id="app"  class="allwidth">
     <Card class="scroll">
+      <p>{{$t('release')}}</p>
       <h1>{{$t('personalweb')}}</h1>
       <div v-if="checkdate(10,24)">Happy 1024 Coding!🎉</div>
       <div v-if="checkdate(10,31)">Happy Halloween!🎃🎉</div>
