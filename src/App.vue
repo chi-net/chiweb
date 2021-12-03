@@ -34,7 +34,7 @@ a,a:visited,a:active{
 a:hover{
   text-decoration: underline !important;
   color:#0af !important;
-  font-size: 1.3em;
+  font-size: 27px;
 }
 a{
   transition: color 0.8s ease-in-out !important;
@@ -90,13 +90,13 @@ html{
     overflow-y:scroll;
   }
   h1{
-    font-size:1.5em;
+    font-size:32px;
   }
   h2{
-    font-size:1.3em;
+    font-size:27px;
   }
   div,Card,#copyright{
-    font-size:1.2em;
+    font-size:21px;
   }
 }
 
