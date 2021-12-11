@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :style={fontFamily: }>
+  <div id="app" :style={fontFamily:ff}>
     <Gallery></Gallery>
     <div class="container">
       <Toolbar></Toolbar>
@@ -19,6 +19,11 @@ export default {
   name: 'App',
   components: {
     Toolbar, IndexCard, Friendlink, Gallery, Copyright
+  },
+  computed: {
+    ff () {
+      return this.$store.state.font
+    }
   }
 }
 </script>
@@ -47,7 +52,7 @@ html{
   /* background-image:none !important;/*Gallery写完之后是很有用哒~ */
 }
 #app {
-  font-family: "Noto Serif SC";
+  /* font-family: "Noto Serif SC"; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:rgba(255,255,255,0);

@@ -27,7 +27,8 @@ const store = new Vuex.Store({
       genshin: { // 哦不原神找不到什么沙雕图片......
         sm: ['paimon1.png'],
         bg: ['']
-    }
+    },
+    font: 'Noto Sans SC!important'
   }
 },
 mutations: {

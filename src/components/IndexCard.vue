@@ -1,5 +1,5 @@
 <template>
-  <div id="app"  class="allwidth">
+  <div id="index"  class="allwidth">
     <Card class="scroll">
       <p>{{$t('release')}}</p>
       <h1>{{$t('personalweb')}}</h1>
