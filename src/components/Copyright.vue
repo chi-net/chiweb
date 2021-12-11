@@ -4,9 +4,11 @@
     All rights reserved &copy;2018-{{new Date().getFullYear()}}.
     <br>
     <a href="//github.com/chihuo2104/chiweb/" target="_blank">Chiweb</a> Application Version:V3.0(Moe).
-    Package Date:2021-12-03.
+    Package Date:2021-12-11.
     <br>
-    Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;<a href="//webpack.js.org" target="blank">Webpack</a>&amp;<a target="_blank" href="//jenkins.io">Jenkins</a>.<a href="//icp.gov.moe/?keyword=20212104" target="_blank">{{$t('moenum')}}</a>
+    Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;
+    <a href="//webpack.js.org" target="blank">Webpack</a>&amp;<a target="_blank" href="//jenkins.io">Jenkins</a>.
+    <a href="//icp.gov.moe/?keyword=20212104" target="_blank">{{$t('moenum')}}</a>
     <br>{{$t('showalive')}}{{aliveshow}}<br>
     {{$t('statement1')}}<a href="//hypergryph.com" target="_blank">{{$t('hy')}}</a>{{$t('and')}}<a href="//www.mihoyo.com" target="_blank">{{$t('mhy')}}</a>{{$t('statement2')}}
   </div>
