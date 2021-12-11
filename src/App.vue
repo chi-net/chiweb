@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :style={fontFamily: }>
     <Gallery></Gallery>
     <div class="container">
       <Toolbar></Toolbar>
