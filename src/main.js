@@ -34,6 +34,9 @@ const store = new Vuex.Store({
 mutations: {
   changeCH () {
     this.state.isCopyrightHidden = !(this.state.isCopyrightHidden)
+  },
+  setFont (state, sets) {
+    state.font = sets
   }
 }
 })
