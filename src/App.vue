@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 * {
   box-sizing: border-box;
 }
