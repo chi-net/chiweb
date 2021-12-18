@@ -34,18 +34,6 @@ export default {
 @smbk-img: 'url("./assets/gallerys/arknights/sm-1.jpg")';
 @bgbk-img: 'url("./assets/gallerys/arknights/bg-1.jpg")';
 // vars end
-#copyright {
-  background-color: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(15px);
-  text-align: center;
-  padding: 10px;
-  font-size: @basicfont;
-  width: 100%;
-  bottom: 0;
-  left:0;
-  right:0;
-  transition:all 2s ease-in-out;
-}
 // a
 a, a:visited, a:active {
   text-decoration: none;
@@ -58,22 +46,18 @@ a {
 a:hover{
   text-decoration: underline !important;
   color:#0af !important;
-  font-size: @basicfont * 1.5;
+  font-size: @basicfont * 1.3;
 }
 // a attr end.
 #app {
-  /* font-family: "Noto Serif SC"; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:rgba(255,255,255,0);
-  // transition:all 2s linear;
   z-index:9999;
 }
 html{
   width:100%;
   height:100%;
-  /* background-color: #fff !important; */
-  /* background-image:none !important;/*Gallery写完之后是很有用哒~ */
 }
 // container all thing.
 .container {
@@ -85,10 +69,11 @@ html{
   background-color: rgba(255,255,255,0);
 }
 // @media
-@media screen and (min-width: 768px) {/*大屏适配 */
+@media screen and (min-width: 768px) {
+  // desktop
   html {
     overflow-y:hidden !important;
-    /*过渡期使用 */
+    // passing
     background-image: @bgbk-img;
   }
   #app {
@@ -97,48 +82,22 @@ html{
   .container{
     grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
   }
-  #copyright{
-    position: absolute;
-    z-index:9999999;
-  }
-  .hidden{
-    bottom:calc(3px - 25%) !important;
-  }
   .allwidth{
-    height:100%;
+    height: 100%;
   }
   .scroll{
     overflow-y: scroll;
   }
-  h1{
-    font-size: @basicfont * 1.8;
-  }
-  h2{
-    font-size: @basicfont * 1.5;
-  }
-  div,Card,#copyright{
-    font-size: @basicfont;
-  }
 }
 
-@media screen and (max-width: 768px) {/*小屏适配* */
+@media screen and (max-width: 768px) {
+  // mobile
   html{
-    /*过渡期使用 */
     background-image: @smbk-img;
-  }
-  #app {
-    // margin-top: 48px;
-    display: block;
   }
   .container{
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));;
     grid-template-rows: auto;
-  }
-  #copyright{
-    position: relative;
-  }
-  .hidden {
-    display: none;
   }
 }
 #showcopyright {
@@ -146,6 +105,16 @@ html{
   padding-bottom: 3px;
   display: block;
   text-decoration: none !important;
-  cursor:pointer;
+  cursor: pointer;
+}
+// all things in static font size.
+h1{
+  font-size: @basicfont * 1.8;
+}
+h2{
+  font-size: @basicfont * 1.5;
+}
+div,Card,#copyright{
+  font-size: @basicfont;
 }
 </style>

@@ -49,23 +49,47 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+// vars
+@basicfont: 18px;
+
+// vars end
+// reuse
 .zero {
   padding: 0px;
   margin: 0px;
   border: none;
 }
+// end
+#copyright {
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  padding: 10px;
+  font-size: @basicfont;
+  width: 100%;
+  bottom: 0;
+  left:0;
+  right:0;
+  transition:bottom 2s ease-in-out;
+}
 @media screen and (min-width: 768px){
-  // 大屏适配
+  // desktop
   #copyright{
     position: absolute;
     z-index: 9999999;
   }
+  .hidden{
+    bottom: calc(3px - 25%) !important;
+  }
 }
 @media screen and (max-width: 768px){
-  // 小屏适配
+  // mobile and ipad.
   #copyright{
     position: relative;
     .zero
+  }
+  .hidden {
+    display: none;
   }
 }
 </style>
