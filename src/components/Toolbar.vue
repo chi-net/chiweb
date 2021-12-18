@@ -20,7 +20,7 @@
       <a id="en" @click="locate('en')" :class="{ chose: (this.$i18n.locale == 'en')?true:false }">English</a>
     </Card>
     <Card id="fonts">
-      <span id="fonts-img">字</span>
+      <span id="fonts-img">字/A</span>
       <a id="notosans" @click="font('Noto Sans SC')" :class="{ chose: (this.$store.state.font == 'Noto Sans SC')?true:false }">Noto Sans</a>
       <a id="notoserif" @click="font('Noto Serif SC')" :class="{ chose: (this.$store.state.font == 'Noto Serif SC')?true:false }">Noto Serif</a>
     </Card>
