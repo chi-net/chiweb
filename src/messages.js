@@ -21,7 +21,7 @@ export default {
     showalive: 'This site has been in the web for ',
     times: '{day} days,{hour} hours,{min} minutes and {sec} seconds.',
     moenum: 'Moeicp No.20212104',
-    release: 'This application new version v3.0 Moe Edition has released.'
+    release: 'This application new version v3.1 has released.'
   },
   cn: {
     friendlink: '友情链接',
@@ -45,6 +45,6 @@ export default {
     showalive: '本站已经在互联网的角落苟且偷生了',
     times: '{day}天{hour}小时{min}分{sec}秒',
     moenum: '萌ICP备-20212104号',
-    release: '3.0版本(Moe Edition)发布啦~'
+    release: '3.1版本发布啦~'
   }
 }
