@@ -48,5 +48,24 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
+.zero {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+@media screen and (min-width: 768px){
+  // 大屏适配
+  #copyright{
+    position: absolute;
+    z-index: 9999999;
+  }
+}
+@media screen and (max-width: 768px){
+  // 小屏适配
+  #copyright{
+    position: relative;
+    .zero
+  }
+}
 </style>

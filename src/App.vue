@@ -29,21 +29,45 @@ export default {
 </script>
 
 <style lang="less">
-* {
-  box-sizing: border-box;
+// vars
+@basicfont: 18px;
+@smbk-img: 'url("./assets/gallerys/arknights/sm-1.jpg")';
+@bgbk-img: 'url("./assets/gallerys/arknights/bg-1.jpg")';
+// vars end
+#copyright {
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  padding: 10px;
+  font-size: @basicfont;
+  width: 100%;
+  bottom: 0;
+  left:0;
+  right:0;
+  transition:all 2s ease-in-out;
 }
-a,a:visited,a:active{
-  text-decoration: none !important;
-  color:#00a !important;
+// a
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #00a;
+}
+a {
+  transition: color 0.8s ease-in-out !important;
+  transition: font-size 0.8s ease-in-out !important;
 }
 a:hover{
   text-decoration: underline !important;
   color:#0af !important;
-  font-size: 27px;
+  font-size: @basicfont * 1.5;
 }
-a{
-  transition: color 0.8s ease-in-out !important;
-  transition: font-size 0.8s ease-in-out !important;
+// a attr end.
+#app {
+  /* font-family: "Noto Serif SC"; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:rgba(255,255,255,0);
+  // transition:all 2s linear;
+  z-index:9999;
 }
 html{
   width:100%;
@@ -51,15 +75,7 @@ html{
   /* background-color: #fff !important; */
   /* background-image:none !important;/*Gallery写完之后是很有用哒~ */
 }
-#app {
-  /* font-family: "Noto Serif SC"; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color:rgba(255,255,255,0);
-  transition:all 2s ease-in-out;
-  z-index:9999;
-}
-
+// container all thing.
 .container {
   text-align: center;
   display: grid;
@@ -68,12 +84,12 @@ html{
   z-index: 9999;
   background-color: rgba(255,255,255,0);
 }
-
+// @media
 @media screen and (min-width: 768px) {/*大屏适配 */
   html {
     overflow-y:hidden !important;
     /*过渡期使用 */
-    background-image:url("./assets/gallerys/arknights/bg-1.jpg");
+    background-image: @bgbk-img;
   }
   #app {
     margin: 0 0 0;
@@ -92,26 +108,26 @@ html{
     height:100%;
   }
   .scroll{
-    overflow-y:scroll;
+    overflow-y: scroll;
   }
   h1{
-    font-size:32px;
+    font-size: @basicfont * 1.8;
   }
   h2{
-    font-size:27px;
+    font-size: @basicfont * 1.5;
   }
   div,Card,#copyright{
-    font-size:21px;
+    font-size: @basicfont;
   }
 }
 
 @media screen and (max-width: 768px) {/*小屏适配* */
   html{
     /*过渡期使用 */
-    background-image:url("./assets/gallerys/arknights/sm-1.png");
+    background-image: @smbk-img;
   }
   #app {
-    margin-top: 48px;
+    // margin-top: 48px;
     display: block;
   }
   .container{
@@ -119,26 +135,12 @@ html{
     grid-template-rows: auto;
   }
   #copyright{
-    position:relative;
+    position: relative;
   }
   .hidden {
-    display:none;
+    display: none;
   }
 }
-
-#copyright {
-  background-color: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(15px);
-  text-align: center;
-  padding: 10px;
-  font-size: 18px;
-  width: 100%;
-  bottom: 0;
-  left:0;
-  right:0;
-  transition:all 2s ease-in-out;
-}
-
 #showcopyright {
   padding-top: 3px;
   padding-bottom: 3px;
