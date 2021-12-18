@@ -75,7 +75,7 @@ export default {
 <style lang="less" scoped>
 // vars
 @onethird: 33%;// 1/3
-
+@basicfont: 18px;// Sync as App.vue
 // vars end
 #toolbar{
   overflow-y: scroll !important;
@@ -88,17 +88,17 @@ export default {
   border-radius: 256px;
   width: 40%;
 }
-#translations a{
-  cursor:pointer;
-}
-#translations-img svg{
-  height: 32px;
-}
 .chose{
   color: red !important;
 }
 #translations {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  a {
+    cursor: pointer;
+  }
+  svg {
+    height: @basicfont * 1.5;
+  }
 }
 </style>
