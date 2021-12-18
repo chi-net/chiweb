@@ -19,9 +19,9 @@
       <a id="zh" @click="locate('cn')" :class="{ chose: (this.$i18n.locale == 'cn')?true:false }">简体中文</a>&nbsp;
       <a id="en" @click="locate('en')" :class="{ chose: (this.$i18n.locale == 'en')?true:false }">English</a>
     </Card>
-    <Card id="fonts-change">
+    <Card id="fonts">
       <span id="fonts-img">字</span>&nbsp;
-      <a id="notosans" @click="font('Noto Sans SC')" :class="{ chose: (this.$store.state.font == 'Noto Sans SC')?true:false }">Noto Sans</a>&nbsp;|&nbsp;
+      <a id="notosans" @click="font('Noto Sans SC')" :class="{ chose: (this.$store.state.font == 'Noto Sans SC')?true:false }">Noto Sans</a>
       <a id="notoserif" @click="font('Noto Serif SC')" :class="{ chose: (this.$store.state.font == 'Noto Serif SC')?true:false }">Noto Serif</a>
     </Card>
   </div>
@@ -77,12 +77,16 @@ export default {
 @onethird: 33%;// 1/3
 @basicfont: 18px;// Sync as App.vue
 // vars end
+.aroundflex {
+  display: flex;
+  justify-content: space-around;
+}
+// flex end
 #toolbar{
   overflow-y: scroll !important;
 }
 .btn-group {
-  display: flex;
-  justify-content: space-around;
+  .aroundflex
 }
 #chiimg {
   border-radius: 256px;
@@ -100,5 +104,8 @@ export default {
   svg {
     height: @basicfont * 1.5;
   }
+}
+#fonts {
+  .aroundflex
 }
 </style>
