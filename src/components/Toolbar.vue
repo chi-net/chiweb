@@ -6,9 +6,9 @@
     </Card>
     <Card>
       <div class="btn-group">
-        <a @click="poster('previous')">&lt;{{$t('previous')}}</a>|
-        <a @click="poster('change')">{{$t('backgroundimage')}}</a>|
-        <a @click="poster('next')">{{$t('next')}}&gt;</a>
+        <div><a @click="poster('previous')">&lt;{{$t('previous')}}</a></div>
+        <div><a @click="poster('change')">{{$t('backgroundimage')}}</a></div>
+        <div><a @click="poster('next')">{{$t('next')}}&gt;</a></div>
       </div>
     </Card>
     <Card>
@@ -72,19 +72,17 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
+// vars
+@onethird: 33%;// 1/3
+
+// vars end
 #toolbar{
   overflow-y: scroll !important;
 }
 .btn-group {
-  /* display: flex;
-  justify-content: center; */
-  display:block;
-}
-.btn-group a {
-  text-align:center;
-  width:33%;
-  vertical-align: middle;
+  display: flex;
+  justify-content: space-around;
 }
 #chiimg {
   border-radius: 256px;
