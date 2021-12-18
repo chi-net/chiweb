@@ -28,8 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: build
         run: |
-          npm install
-          npm run build
+          yarn install
+          yarn build
           zip -r -q -o dist.zip dist/
           mkdir a
           cp dist.zip a/dist.zip
