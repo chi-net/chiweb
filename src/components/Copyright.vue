@@ -1,15 +1,17 @@
 <template>
   <div id="copyright" :class="{'hidden':this.$store.state.isCopyrightHidden}">
-    Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a> &amp; <a href="//raycoder.me" target="blank">Ray</a>.
+    Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a>.
     All rights reserved &copy;2018-{{new Date().getFullYear()}}.
     <br>
     <a href="//github.com/chihuo2104/chiweb/" target="_blank">Chiweb</a> Application Version:V3.1(Moe).
     Package Date:2021-12-18.
     <br>
-    Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;<a href="//nodejs.org" target="blank">Node.js</a>&amp;
-    <a href="//webpack.js.org" target="blank">Webpack</a>&amp;<a target="_blank" href="//jenkins.io">Jenkins</a>.
+    Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;
+    <a href="//nodejs.org" target="blank">Node.js</a>&amp;
+    <a href="//webpack.js.org" target="blank">Webpack</a>&amp;
+    <a target="_blank" href="//jenkins.io">Jenkins</a>.
     <a href="//icp.gov.moe/?keyword=20212104" target="_blank">{{$t('moenum')}}</a>
-    <br>{{$t('showalive')}}{{aliveshow}}<br>
+    <br>{{$t('showalive')}}{{aliveshow}}&nbsp;Thanks to <a href="//raycoder.me" target="blank">Ray</a>!<br>
     {{$t('statement1')}}<a href="//hypergryph.com" target="_blank">{{$t('hy')}}</a>{{$t('and')}}<a href="//www.mihoyo.com" target="_blank">{{$t('mhy')}}</a>{{$t('statement2')}}
   </div>
 </template>
@@ -28,11 +30,12 @@ export default {
   },
   mounted () {
     this.timer = setInterval(() => {
+      const now = parseInt(Math.round(new Date() / 1000))
       this.alive = {
-        day: parseInt(parseInt(Math.round(new Date() / 1000) - this.starttime) / (60 * 60 * 24)),
-        hour: parseInt((parseInt(Math.round(new Date() / 1000) - this.starttime) % (60 * 60 * 24) / (60 * 60))),
-        min: parseInt(((parseInt(Math.round(new Date() / 1000) - this.starttime) % (60 * 60 * 24) % (60 * 60)) / 60)),
-        sec: parseInt(((parseInt(Math.round(new Date() / 1000) - this.starttime) % (60 * 60 * 24) % (60 * 60)) % 60))
+        day: this.tozero(parseInt((now - this.starttime) / (60 * 60 * 24))),
+        hour: this.tozero(parseInt((now - this.starttime) % (60 * 60 * 24) / (60 * 60))),
+        min: this.tozero(parseInt((now - this.starttime) % (60 * 60 * 24) % (60 * 60) / 60)),
+        sec: this.tozero(parseInt((now - this.starttime) % (60 * 60 * 24) % (60 * 60) % 60))
       }
     }, 1000)
   },
@@ -44,6 +47,11 @@ export default {
       get () {
         return this.$t('times', { day: this.alive.day, hour: this.alive.hour, min: this.alive.min, sec: this.alive.sec })
       }
+    }
+  },
+  methods: {
+    tozero (num) {
+      return (num < 10) ? '0' + num : num
     }
   }
 }
