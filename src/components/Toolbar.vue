@@ -85,6 +85,13 @@ export default {
 #toolbar{
   overflow-y: scroll !important;
 }
+#showcopyright {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: block;
+  text-decoration: none !important;
+  cursor: pointer;
+}
 .btn-group {
   .aroundflex
 }

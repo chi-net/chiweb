@@ -100,13 +100,6 @@ html{
     grid-template-rows: auto;
   }
 }
-#showcopyright {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  display: block;
-  text-decoration: none !important;
-  cursor: pointer;
-}
 // all things in static font size.
 h1{
   font-size: @basicfont * 1.8;
