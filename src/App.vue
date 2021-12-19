@@ -1,11 +1,11 @@
 <template>
   <div id="app" :style={fontFamily:ff}>
-    <Gallery></Gallery>
     <div class="container">
       <Toolbar></Toolbar>
       <IndexCard></IndexCard>
       <Friendlink></Friendlink>
     </div>
+    <Gallery></Gallery>
     <Copyright></Copyright>
   </div>
 </template>
@@ -31,8 +31,8 @@ export default {
 <style lang="less">
 // vars
 @basicfont: 18px;
-@smbk-img: 'url("./assets/gallerys/arknights/sm-1.jpg")';
-@bgbk-img: 'url("./assets/gallerys/arknights/bg-1.jpg")';
+// @smbk-img: 'url("./assets/gallerys/arknights/sm-1.jpg")';
+// @bgbk-img: 'url("./assets/gallerys/arknights/bg-1.jpg")';
 // vars end
 // a
 a, a:visited, a:active {
@@ -74,7 +74,7 @@ html{
   html {
     overflow-y:hidden !important;
     // passing
-    background-image: @bgbk-img;
+    // background-image: @bgbk-img;
   }
   #app {
     margin: 0 0 0;
@@ -93,7 +93,7 @@ html{
 @media screen and (max-width: 768px) {
   // mobile
   html{
-    background-image: @smbk-img;
+    // background-image: @smbk-img;
   }
   .container{
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));;
