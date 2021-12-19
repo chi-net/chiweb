@@ -92,9 +92,9 @@ html{
 
 @media screen and (max-width: 768px) {
   // mobile
-  html{
+  // html{
     // background-image: @smbk-img;
-  }
+  // }
   .container{
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));;
     grid-template-rows: auto;
