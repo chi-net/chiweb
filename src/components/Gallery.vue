@@ -1,6 +1,6 @@
 <template>
   <div id="gallery">
-    <img id="bg" :src="imgpath">
+    <img id="bg" :src="imgpath" :title="imgdesc">
     <!-- <img id="sm" src="../assets/gallerys/arknights/sm-1.png"> -->
   </div>
 </template>
@@ -15,7 +15,10 @@ export default {
   },
   computed: {
     imgpath () {
-      return '../assets/gallerys' + this.set + '/' + this.type + '-' + this.no
+      return '/gallerys/' + this.set + '/' + this.type + '-' + this.no
+    },
+    imgdesc () {
+      return this.set + '/' + this.no
     }
   }
 }
