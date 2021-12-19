@@ -1,12 +1,23 @@
 <template>
   <div id="gallery">
-    <img id="bg" src="../assets/gallerys/arknights/bg-2.jpg">
+    <img id="bg" :src="imgpath">
     <!-- <img id="sm" src="../assets/gallerys/arknights/sm-1.png"> -->
   </div>
 </template>
 <script>
 export default {
-
+  data () {
+    return {
+      set: 'arknights',
+      type: 'bg',
+      no: '3.jpg'
+    }
+  },
+  computed: {
+    imgpath () {
+      return '../assets/gallerys' + this.set + '/' + this.type + '-' + this.no
+    }
+  }
 }
 </script>
 <style lang="less" scoped>
