@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .card {
   border-radius: 5px;
   /* border: 3px solid #eee; */
