@@ -3,7 +3,7 @@
     Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a>.
     All rights reserved &copy;2018-{{new Date().getFullYear()}}.
     <br>
-    <a href="//github.com/chihuo2104/chiweb/" target="_blank">Chiweb</a> Application Version:V3.1(Moe).
+    <a href="//github.com/chihuo2104/chiweb/" target="_blank">Chiweb</a> Application Version:V3.2(Moe).
     Package Date:2021-12-19.
     <br>
     Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;
