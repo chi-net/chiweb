@@ -110,4 +110,18 @@ h2{
 div,Card,#copyright{
   font-size: @basicfont;
 }
+/*
+  Copied from
+  https://github.com/zdhxiong/mdui/blob/1fb7d4e013e5f690d10166e30035c418a26ee243/src/styles/mixin/helper.less
+*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  // 桌面端
+  @media (min-width: 768px) {
+    width: 8px;
+    height: 8px;
+  }
+}
 </style>
