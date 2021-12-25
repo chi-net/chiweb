@@ -1,41 +1,40 @@
 {
   "name": "chiweb",
   "version": "3.2.0",
+  "private": true,
+  "author": "chihuo2104<chihuo2104@moekonnyaku.com>",
   "scripts": {
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve"
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/i18n/**/*.json\""
   },
   "dependencies": {
-    "core-js": "^3.18.0",
-    "less": "^4.1.2",
-    "less-loader": "7",
-    "vue": "^2.6.14",
-    "vue-i18n": "^8.26.5"
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.1.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.15.7",
-    "@vue/cli-plugin-babel": "~4.5.13",
-    "@vue/cli-plugin-eslint": "~4.5.13",
+    "@intlify/vue-i18n-loader": "^3.0.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.13",
-    "axios": "^0.21.4",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-vue": "^7.18.0",
-    "style-resources-loader": "^1.4.1",
-    "vue-cli-plugin-style-resources-loader": "~0.1.5",
-    "vue-eslint-parser": "^7.11.0",
-    "vue-template-compiler": "^2.6.14",
-    "vuex": "^3.6.2"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "license": ""
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-cli-plugin-i18n": "~2.3.1"
+  }
 }
