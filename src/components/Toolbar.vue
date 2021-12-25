@@ -93,7 +93,8 @@ export default {
   cursor: pointer;
 }
 .btn-group {
-  .aroundflex
+  .aroundflex();
+  cursor: pointer
 }
 #chiimg {
   border-radius: 256px;
