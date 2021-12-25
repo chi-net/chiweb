@@ -26,6 +26,7 @@ export default {
     }
   }
 }
+document.title = 'chihuo2104の小站'
 </script>
 
 <style lang="less">
