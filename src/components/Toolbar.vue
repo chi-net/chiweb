@@ -83,7 +83,7 @@ export default {
 }
 // flex end
 #toolbar{
-  overflow-y: scroll !important;
+  overflow-y: auto !important;
 }
 #showcopyright {
   padding-top: 3px;
