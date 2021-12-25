@@ -37,7 +37,7 @@ export default {
     next: '下一张',
     showcpr: '显示版权页',
     title: 'chihuo2104の小站',
-    statement1: '版权声明：部分背景图片版权由',
+    statement1: '版权声明:部分背景图片版权由',
     hy: '上海市鹰角网络科技有限公司',
     mhy: '上海市米哈游影铁科技有限公司',
     and: '和',
