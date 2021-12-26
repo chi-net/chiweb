@@ -2,18 +2,18 @@
   <div id="settings" class="scroll">
     <Card>
       <h1>设置</h1>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br>
       <hr>
       Powered by chihuo2104. All rights reserved &copy;2018-{{ new Date().getFullYear() }}
     </Card>
   </div>
-  <Gallerys></Gallerys>
+  <Gallery></Gallery>
 </template>
 <script>
-import Gallerys from '@/components/Gallery.vue'
+import Gallery from '@/components/Gallery.vue'
 export default {
   components: {
-    Gallerys
+    Gallery
   }
 }
 </script>
@@ -43,32 +43,6 @@ html{
   width:100%;
   height:100%;
 }
-// @media
-@media screen and (min-width: 768px) {
-  // desktop
-  // html {
-    // overflow-y:hidden !important;
-    // passing
-    // background-image: @bgbk-img;
-  // }
-  #app {
-    margin: 0 0 0;
-  }
-  .scroll{
-    overflow-y: scroll;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  // mobile
-  // html{
-    // background-image: @smbk-img;
-  // }
-  .container{
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));;
-    grid-template-rows: auto;
-  }
-}
 // all things in static font size.
 h1{
   font-size: @basicfont * 1.8;
@@ -92,5 +66,11 @@ div,Card,#copyright{
     width: 8px;
     height: 8px;
   }
+}
+#settings {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  position: fixed;
 }
 </style>
