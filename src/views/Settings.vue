@@ -2,6 +2,7 @@
   <div id="settings" class="scroll">
     <Card>
       <h1>设置</h1>
+      <a href="#" @click="this.$router.push('/')">返回主页</a>
       <br><br>
       <hr>
       Powered by chihuo2104. All rights reserved &copy;2018-{{ new Date().getFullYear() }}

@@ -10,7 +10,7 @@
   "previous":"Previous",
   "backgroundimage":"Background Images",
   "next":"Next",
-  "showcpr":"Show Copyright Statement",
+  "showcpr":"Copyright Statement",
   "title":"chihuo2104' s website",
   "statement1":"Copyright statement: Some of the background copyright by ",
   "hy":"Shanghai Hypergryph Network Technology Co,.Ltd",
@@ -20,5 +20,6 @@
   "showalive":"This site has been in the web for ",
   "times":"{day} days,{hour} hours,{min} minutes and {sec} seconds.",
   "moenum":"Moeicp No.20212104",
-  "release":"This application new version v3.1 has released."
+  "release":"This application new version v3.1 has released.",
+  "settings":"Settings"
 }
