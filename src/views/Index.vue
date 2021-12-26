@@ -1,9 +1,9 @@
 <template>
   <div id="app" :style={fontFamily:ff}>
     <div class="container">
-      <Toolbar></Toolbar>
-      <IndexCard></IndexCard>
-      <Friendlink></Friendlink>
+      <div><Toolbar class="flex-grow-1"></Toolbar></div>
+      <div><IndexCard class="flex-grow-2"></IndexCard></div>
+      <div><Friendlink class="flex-grow-2"></Friendlink></div>
     </div>
     <Gallery></Gallery>
     <Copyright></Copyright>
@@ -63,11 +63,18 @@ html{
 // container all thing.
 .container {
   text-align: center;
-  display: grid;
-  grid-auto-rows: max-content;
+  display: flex;
   justify-content: center;
   z-index: 9999;
   background-color: rgba(255,255,255,0);
+}
+.flex-grow{
+  &-1 {
+    flex-grow: 1;
+  }
+  &-2 {
+    flex-grow: 2;
+  }
 }
 // @media
 @media screen and (min-width: 768px) {
@@ -81,7 +88,7 @@ html{
     margin: 0 0 0;
   }
   .container{
-    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
+    justify-content: center;
   }
   .allwidth{
     height: 100%;
@@ -93,12 +100,8 @@ html{
 
 @media screen and (max-width: 768px) {
   // mobile
-  // html{
-    // background-image: @smbk-img;
-  // }
   .container{
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));;
-    grid-template-rows: auto;
+    flex-direction: column;
   }
 }
 // all things in static font size.
