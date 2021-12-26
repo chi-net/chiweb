@@ -78,6 +78,7 @@ export default {
   bottom: 0;
   left:0;
   right:0;
+  position: fixed;
   transition:bottom 2s ease-in-out;
 }
 @media screen and (min-width: 768px){
