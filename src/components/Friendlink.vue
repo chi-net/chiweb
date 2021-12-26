@@ -1,5 +1,5 @@
 <template>
-  <div id="friendlink"  class="allwidth">
+  <div id="friendlink">
     <Card class="scroll">
       <h1>{{$t('friendlink')}}</h1>
       <div v-for="i in links" :key="i.name">

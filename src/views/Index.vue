@@ -67,6 +67,9 @@ html{
   justify-content: center;
   z-index: 9999;
   background-color: rgba(255,255,255,0);
+  div {
+    height: inherit;
+  }
 }
 .flex-grow{
   &-1 {
@@ -80,7 +83,7 @@ html{
 @media screen and (min-width: 768px) {
   // desktop
   html {
-    overflow-y:hidden !important;
+    overflow-y:scroll !important;
     // passing
     // background-image: @bgbk-img;
   }
@@ -89,9 +92,6 @@ html{
   }
   .container{
     justify-content: center;
-  }
-  .allwidth{
-    height: 100%;
   }
   .scroll{
     overflow-y: scroll;
