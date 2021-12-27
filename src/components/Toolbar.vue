@@ -80,7 +80,7 @@ export default {
 // vars end
 .aroundflex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 // flex end
 #toolbar{
