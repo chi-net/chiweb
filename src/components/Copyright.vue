@@ -59,14 +59,6 @@ export default {
 <style lang="less" scoped>
 // vars
 @import "../style/importme.less";
-// vars end
-// reuse
-.zero {
-  padding: 0px;
-  margin: 0px;
-  border: none;
-}
-// end
 #copyright {
   background-color: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(15px);
@@ -86,7 +78,7 @@ export default {
     z-index: 9999999;
   }
   .hidden{
-    bottom: calc(3px - 25%) !important;
+    bottom: calc(40%) !important;
   }
 }
 @media screen and (max-width: 768px){

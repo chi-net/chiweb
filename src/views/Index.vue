@@ -54,5 +54,8 @@ html{
     // Mobile version for resp.
     flex-direction: column;
   }
+  @media screen and (min-width: @sm) {
+    align-items: stretch;
+  }
 }
 </style>
