@@ -18,23 +18,23 @@ export default {
       .get('https://cdn.jsdelivr.net/gh/chihuo2104/friends/friends/index.json')
       .then(response => {
         // console.log(response)
-        if (this.$store.development) { console.log(response.data) }
+        if (this.$store.state.development) { console.log(response.data) }
         this.info = response.data
-        if (this.$store.development) { console.log(response.info) }
+        if (this.$store.state.development) { console.log(response.info) }
       })
       .then(() => {
-        if (this.$store.development) { console.log(this.info) }
+        if (this.$store.state.development) { console.log(this.info) }
         this.info.forEach(element => {
-          if (this.$store.development) { console.log(this.links) }
-          if (this.$store.development) { console.log(element) }
+          if (this.$store.state.development) { console.log(this.links) }
+          if (this.$store.state.development) { console.log(element) }
           axios
             .get('https://cdn.jsdelivr.net/gh/chihuo2104/friends/friends/' + element)
             .then(response => (this.links.push(response.data)))
-          if (this.$store.development) { console.log(this.links) }
+          if (this.$store.state.development) { console.log(this.links) }
         })
       })
       .then(() => {
-        if (this.$store.development) { console.log(this.links) }
+        if (this.$store.state.development) { console.log(this.links) }
       })
   },
   data () {
