@@ -4,7 +4,7 @@
     All rights reserved &copy;2018-{{new Date().getFullYear()}}.
     <br>
     <a href="//github.com/chihuo2104/chiweb/" target="_blank">Chiweb</a> Application Version:V3.3-Preview(Moe).
-    Package Date:2021-12-27.
+    Package Date:2021-12-31.
     <br>
     Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;
     <a href="//nodejs.org" target="blank">Node.js</a>&amp;
