@@ -19,9 +19,8 @@ export default {
 }
 </script>
 <style lang="less">
-// Synced from Index.vue
-// vars
-@basicfont: 18px;
+@import "../style/fucntions.less";
+@import "../style/setting_vars.less";
 // @smbk-img: 'url("./assets/gallerys/arknights/sm-1.jpg")';
 // @bgbk-img: 'url("./assets/gallerys/arknights/bg-1.jpg")';
 // vars end

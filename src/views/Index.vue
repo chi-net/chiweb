@@ -31,7 +31,8 @@ document.title = 'chihuo2104の小站'
 
 <style lang="less">
 // vars
-@basicfont: 18px;
+@import "../style/fucntions.less";
+@import "../style/setting_vars.less";
 // @smbk-img: 'url("./assets/gallerys/arknights/sm-1.jpg")';
 // @bgbk-img: 'url("./assets/gallerys/arknights/bg-1.jpg")';
 // vars end
@@ -64,7 +65,6 @@ html{
 .container {
   text-align: center;
   display: flex;
-  justify-content: center;
   z-index: 9999;
   background-color: rgba(255,255,255,0);
   div {
@@ -82,19 +82,8 @@ html{
 // @media
 @media screen and (min-width: 768px) {
   // desktop
-  html {
-    overflow-y:scroll !important;
-    // passing
-    // background-image: @bgbk-img;
-  }
-  #app {
-    margin: 0 0 0;
-  }
   .container{
     justify-content: center;
-  }
-  .scroll{
-    overflow-y: scroll;
   }
 }
 
@@ -126,6 +115,9 @@ div,Card,#copyright{
   @media (min-width: 768px) {
     width: 8px;
     height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
   }
 }
 </style>

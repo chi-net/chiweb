@@ -5,13 +5,13 @@
       <h2>{{$t('title')}}</h2>
     </Card>
     <Card>
-      <div class="btn-group">
+      <div class="gallerys-control">
         <div><a @click="poster('previous')">&lt;{{$t('previous')}}</a></div>
         <div><a @click="poster('change')">{{$t('backgroundimage')}}</a></div>
         <div><a @click="poster('next')">{{$t('next')}}&gt;</a></div>
       </div>
     </Card>
-    <Card class="btn-group">
+    <Card class="group2">
       <a @click="changeCH()" id="showcopyright">{{$t('showcpr')}}</a>
       <a @click="this.$router.push('/settings')">{{$t('settings')}}</a>
     </Card>
@@ -76,7 +76,8 @@ export default {
 <style lang="less" scoped>
 // vars
 @onethird: 33%;// 1/3
-@basicfont: 18px;// Sync as App.vue
+@import "../style/fucntions.less";
+@import "../style/setting_vars.less";
 // vars end
 .aroundflex {
   display: flex;
@@ -97,9 +98,13 @@ export default {
   text-decoration: none !important;
   cursor: pointer;
 }
-.btn-group {
+#gallery-control {
   .betweenflex();
   cursor: pointer
+}
+#group2 {
+  .aroundflex();
+  cursor: pointer;
 }
 #chiimg {
   border-radius: 256px;

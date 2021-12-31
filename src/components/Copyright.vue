@@ -58,8 +58,8 @@ export default {
 </script>
 <style lang="less" scoped>
 // vars
-@basicfont: 18px;
-
+@import "../style/fucntions.less";
+@import "../style/setting_vars.less";
 // vars end
 // reuse
 .zero {
