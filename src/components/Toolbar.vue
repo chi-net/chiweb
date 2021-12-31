@@ -80,6 +80,10 @@ export default {
 // vars end
 .aroundflex {
   display: flex;
+  justify-content: space-around;
+}
+.betweenflex {
+  display: flex;
   justify-content: space-between;
 }
 // flex end
@@ -94,7 +98,7 @@ export default {
   cursor: pointer;
 }
 .btn-group {
-  .aroundflex();
+  .betweenflex();
   cursor: pointer
 }
 #chiimg {
