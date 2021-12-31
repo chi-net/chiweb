@@ -1,8 +1,13 @@
 module.exports = {
   pluginOptions: {
-    'style-resources-loader': {
-      preProcessor: 'less',
-      patterns: []
+    i18n: {
+      locale: 'cn',
+      fallbackLocale: 'cn',
+      localeDir: 'i18n',
+      enableLegacy: false,
+      runtimeOnly: false,
+      compositionOnly: false,
+      fullInstall: true
     }
   }
 }

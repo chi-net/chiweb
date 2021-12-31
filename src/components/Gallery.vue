@@ -1,15 +1,24 @@
 <template>
   <div id="gallery">
-    <!-- <img id="bg" src="../assets/gallerys/arknights/bg-1.jpg">
-    <img id="sm" src="../assets/gallerys/arknights/sm-1.png"> -->
+    <img id="bg" :src="imgpath" :title="imgdesc">
+    <!-- <img id="sm" src="../assets/gallerys/arknights/sm-1.png"> -->
   </div>
 </template>
 <script>
 export default {
-
+  data () {
+  },
+  computed: {
+    imgpath () {
+      return '/gallerys/' + this.$store.state.currentGallery.set + '/' + this.$store.state.currentGallery.type + '-' + this.$store.state.currentGallery.no
+    },
+    imgdesc () {
+      return this.set + '/' + this.no
+    }
+  }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
 #bg,#sm{
   padding:0px;
   margin: 0px;
@@ -27,6 +36,13 @@ export default {
 @media screen and (min-width:768px){
   #sm{
     display:none;
+  }
+  #bg{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
   }
 }
 @media screen and (max-width:768px){

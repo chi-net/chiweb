@@ -5,14 +5,15 @@
       <h2>{{$t('title')}}</h2>
     </Card>
     <Card>
-      <div class="btn-group">
+      <div id="gallerys-control">
         <div><a @click="poster('previous')">&lt;{{$t('previous')}}</a></div>
         <div><a @click="poster('change')">{{$t('backgroundimage')}}</a></div>
         <div><a @click="poster('next')">{{$t('next')}}&gt;</a></div>
       </div>
     </Card>
-    <Card>
+    <Card id="group2">
       <a @click="changeCH()" id="showcopyright">{{$t('showcpr')}}</a>
+      <a @click="this.$router.push('/settings')">{{$t('settings')}}</a>
     </Card>
     <Card id="translations">
       <span id="translations-img"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg></span>
@@ -38,7 +39,6 @@ export default {
   methods: {
     changeCH () {
       this.$store.commit('changeCH')
-      console.log('What>>')
     },
     locate (lang) {
       this.$i18n.locale = lang
@@ -75,25 +75,34 @@ export default {
 <style lang="less" scoped>
 // vars
 @onethird: 33%;// 1/3
-@basicfont: 18px;// Sync as App.vue
+@import "../style/importme.less";
 // vars end
 .aroundflex {
   display: flex;
   justify-content: space-around;
 }
+.betweenflex {
+  display: flex;
+  justify-content: space-between;
+}
 // flex end
 #toolbar{
-  overflow-y: scroll !important;
+  overflow-y: auto !important;
 }
 #showcopyright {
   padding-top: 3px;
   padding-bottom: 3px;
   display: block;
   text-decoration: none !important;
-  cursor: pointer;
+  .pointer-cursor();
 }
-.btn-group {
-  .aroundflex
+#gallerys-control {
+  .betweenflex();
+  .pointer-cursor();
+}
+#group2 {
+  .aroundflex();
+  .pointer-cursor();
 }
 #chiimg {
   border-radius: 256px;
@@ -105,7 +114,7 @@ export default {
 #translations {
   .aroundflex();
   a {
-    cursor: pointer;
+    .pointer-cursor();
   }
   svg {
     height: @basicfont * 1.5;
@@ -114,7 +123,7 @@ export default {
 #fonts {
   .aroundflex();
   a {
-    cursor: pointer;
+    .pointer-cursor();
   }
 }
 </style>

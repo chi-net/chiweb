@@ -3,8 +3,8 @@
     Powered by <a href="//im.chihuo2104.dev" target="_blank">chihuo2104</a>.
     All rights reserved &copy;2018-{{new Date().getFullYear()}}.
     <br>
-    <a href="//github.com/chihuo2104/chiweb/" target="_blank">Chiweb</a> Application Version:V3.2(Moe).
-    Package Date:2021-12-19.
+    <a href="//github.com/chihuo2104/chiweb/" target="_blank">Chiweb</a> Application Version:V3.3(Moe).
+    Package Date:2021-12-31.
     <br>
     Engined by <a href="//cn.vuejs.org" target="blank">Vue</a>&amp;
     <a href="//nodejs.org" target="blank">Node.js</a>&amp;
@@ -58,16 +58,7 @@ export default {
 </script>
 <style lang="less" scoped>
 // vars
-@basicfont: 18px;
-
-// vars end
-// reuse
-.zero {
-  padding: 0px;
-  margin: 0px;
-  border: none;
-}
-// end
+@import "../style/importme.less";
 #copyright {
   background-color: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(15px);
@@ -79,25 +70,10 @@ export default {
   left:0;
   right:0;
   transition:bottom 2s ease-in-out;
+  position: fixed;
+  z-index: 12345;
 }
-@media screen and (min-width: 768px){
-  // desktop
-  #copyright{
-    position: absolute;
-    z-index: 9999999;
-  }
-  .hidden{
-    bottom: calc(3px - 25%) !important;
-  }
-}
-@media screen and (max-width: 768px){
-  // mobile and ipad.
-  #copyright{
-    position: relative;
-    .zero
-  }
-  .hidden {
-    display: none;
-  }
+.hidden{
+  bottom: calc(0px - 40%) !important;
 }
 </style>

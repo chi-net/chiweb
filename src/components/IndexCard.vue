@@ -1,5 +1,5 @@
 <template>
-  <div id="index"  class="allwidth">
+  <div id="index">
     <Card class="scroll">
       <p>{{$t('release')}}</p>
       <h1>{{$t('personalweb')}}</h1>
@@ -19,7 +19,7 @@
         {{$t('developing3')}}
       </p>
       <p>{{$t('zwf')}}<br><br><br><br><br></p>
-      <!-- <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br><br><br><br><br> -->
+      <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br><br><br><br><br>
     </Card>
   </div>
 </template>
