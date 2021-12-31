@@ -31,26 +31,10 @@ document.title = 'chihuo2104の小站'
 
 <style lang="less">
 // vars
-@import "../style/fucntions.less";
-@import "../style/setting_vars.less";
+@import "../style/importme.less";
 // @smbk-img: 'url("./assets/gallerys/arknights/sm-1.jpg")';
 // @bgbk-img: 'url("./assets/gallerys/arknights/bg-1.jpg")';
 // vars end
-// a
-a, a:visited, a:active {
-  text-decoration: none;
-  color: #00a;
-}
-a {
-  transition: color 0.8s ease-in-out !important;
-  transition: font-size 0.8s ease-in-out !important;
-}
-a:hover{
-  text-decoration: underline !important;
-  color:#0af !important;
-  font-size: @basicfont * 1.3;
-}
-// a attr end.
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

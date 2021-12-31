@@ -19,8 +19,7 @@ export default {
 }
 </script>
 <style lang="less">
-@import "../style/fucntions.less";
-@import "../style/setting_vars.less";
+@import "../style/importme.less";
 // @smbk-img: 'url("./assets/gallerys/arknights/sm-1.jpg")';
 // @bgbk-img: 'url("./assets/gallerys/arknights/bg-1.jpg")';
 // vars end

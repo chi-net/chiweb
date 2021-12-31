@@ -76,8 +76,7 @@ export default {
 <style lang="less" scoped>
 // vars
 @onethird: 33%;// 1/3
-@import "../style/fucntions.less";
-@import "../style/setting_vars.less";
+@import "../style/importme.less";
 // vars end
 .aroundflex {
   display: flex;

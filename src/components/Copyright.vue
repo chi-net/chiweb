@@ -58,8 +58,7 @@ export default {
 </script>
 <style lang="less" scoped>
 // vars
-@import "../style/fucntions.less";
-@import "../style/setting_vars.less";
+@import "../style/importme.less";
 // vars end
 // reuse
 .zero {
