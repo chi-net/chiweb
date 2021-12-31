@@ -70,25 +70,10 @@ export default {
   left:0;
   right:0;
   transition:bottom 2s ease-in-out;
+  position: fixed;
+  z-index: 12345;
 }
-@media screen and (min-width: 768px){
-  // desktop
-  #copyright{
-    position: fixed;
-    z-index: 9999999;
-  }
-  .hidden{
-    bottom: calc(40%) !important;
-  }
-}
-@media screen and (max-width: 768px){
-  // mobile and ipad.
-  #copyright{
-    position: relative;
-    .zero
-  }
-  .hidden {
-    display: none;
-  }
+.hidden{
+  bottom: calc(0px - 40%) !important;
 }
 </style>
