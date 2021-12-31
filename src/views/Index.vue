@@ -39,7 +39,6 @@ document.title = 'chihuo2104の小站'
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:rgba(255,255,255,0);
-  z-index:9999;
 }
 html{
   width:100%;
@@ -51,8 +50,9 @@ html{
   display: flex;
   z-index: 9999;
   background-color: rgba(255,255,255,0);
-  div {
-    height: inherit;
+  @media screen and (max-width: @sm) {
+    // Mobile version for resp.
+    flex-direction: column;
   }
 }
 .flex-grow{
@@ -61,20 +61,6 @@ html{
   }
   &-2 {
     flex-grow: 2;
-  }
-}
-// @media
-@media screen and (min-width: 768px) {
-  // desktop
-  .container{
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  // mobile
-  .container{
-    flex-direction: column;
   }
 }
 // all things in static font size.
