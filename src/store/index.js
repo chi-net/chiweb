@@ -14,7 +14,12 @@ export default createStore({
           bg: ['']
         }
       },
-      font: 'Noto Sans SC'
+      font: 'Noto Sans SC',
+      currentGallery: {
+        set: 'arknights',
+        type: 'bg',
+        no: '3.jpg'
+      }
     }
   },
   mutations: {
@@ -23,6 +28,9 @@ export default createStore({
     },
     setFont (state, ff) {
       state.font = ff
+    },
+    setGallery (state, gallerys) {
+      state.currentGallery = gallerys
     }
   }
 })

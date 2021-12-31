@@ -39,7 +39,6 @@ export default {
   methods: {
     changeCH () {
       this.$store.commit('changeCH')
-      console.log('What>>')
     },
     locate (lang) {
       this.$i18n.locale = lang

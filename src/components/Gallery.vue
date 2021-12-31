@@ -7,15 +7,10 @@
 <script>
 export default {
   data () {
-    return {
-      set: 'arknights',
-      type: 'bg',
-      no: '3.jpg'
-    }
   },
   computed: {
     imgpath () {
-      return '/gallerys/' + this.set + '/' + this.type + '-' + this.no
+      return '/gallerys/' + this.$store.state.currentGallery.set + '/' + this.$store.state.currentGallery.type + '-' + this.$store.state.currentGallery.no
     },
     imgdesc () {
       return this.set + '/' + this.no

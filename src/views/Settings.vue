@@ -2,6 +2,26 @@
   <div id="settings" class="scroll">
     <Card>
       <h1>设置</h1>
+      <h2>调整Gallery&nbsp;<small>仅供调试!</small></h2>
+      CurrentValue:<br>
+      {{this.$store.state.currentGallery}}<br>
+      Set:
+      <select v-model="gallery.set">
+        <option value="arknights">Arknights</option>
+        <option value="genshin">Genshin Impact</option>
+      </select><br>
+      Type:
+      <select v-model="gallery.type">
+        <option value="sm">SM(手机端)</option>
+        <option value="bg">BG(电脑端)</option>
+      </select><br>
+      No:
+      <input v-model="gallery.no">
+      <br>
+      <button @click="updateGallery()">点我更改</button>
+      <br>
+      请到https://cdn.jsdelivr.net/gh/chihuo2104/chiweb@dev/public/gallerys/ 里面去浏览No!
+      <br>
       <a href="#" @click="this.$router.push('/')">返回主页</a>
       <br><br>
       <hr>
@@ -15,6 +35,20 @@ import Gallery from '@/components/Gallery.vue'
 export default {
   components: {
     Gallery
+  },
+  data () {
+    return {
+      gallery: {
+        set: this.$store.state.currentGallery.set,
+        type: this.$store.state.currentGallery.type,
+        no: this.$store.state.currentGallery.no
+      }
+    }
+  },
+  methods: {
+    updateGallery () {
+      this.$store.commit('setGallery', this.gallery)
+    }
   }
 }
 </script>
