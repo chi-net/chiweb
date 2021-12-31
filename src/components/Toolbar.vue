@@ -98,7 +98,7 @@ export default {
   text-decoration: none !important;
   .pointer-cursor();
 }
-#gallery-control {
+#gallerys-control {
   .betweenflex();
   .pointer-cursor();
 }
