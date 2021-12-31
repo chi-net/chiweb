@@ -5,13 +5,13 @@
       <h2>{{$t('title')}}</h2>
     </Card>
     <Card>
-      <div class="gallerys-control">
+      <div id="gallerys-control">
         <div><a @click="poster('previous')">&lt;{{$t('previous')}}</a></div>
         <div><a @click="poster('change')">{{$t('backgroundimage')}}</a></div>
         <div><a @click="poster('next')">{{$t('next')}}&gt;</a></div>
       </div>
     </Card>
-    <Card class="group2">
+    <Card id="group2">
       <a @click="changeCH()" id="showcopyright">{{$t('showcpr')}}</a>
       <a @click="this.$router.push('/settings')">{{$t('settings')}}</a>
     </Card>
@@ -96,15 +96,15 @@ export default {
   padding-bottom: 3px;
   display: block;
   text-decoration: none !important;
-  cursor: pointer;
+  .pointer-cursor();
 }
 #gallery-control {
   .betweenflex();
-  cursor: pointer
+  .pointer-cursor();
 }
 #group2 {
   .aroundflex();
-  cursor: pointer;
+  .pointer-cursor();
 }
 #chiimg {
   border-radius: 256px;
@@ -116,7 +116,7 @@ export default {
 #translations {
   .aroundflex();
   a {
-    cursor: pointer;
+    .pointer-cursor();
   }
   svg {
     height: @basicfont * 1.5;
@@ -125,7 +125,7 @@ export default {
 #fonts {
   .aroundflex();
   a {
-    cursor: pointer;
+    .pointer-cursor();
   }
 }
 </style>
