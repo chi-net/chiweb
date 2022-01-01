@@ -6,7 +6,7 @@
       <div v-if="checkdate(10,24)">Happy 1024 Coding!🎉</div>
       <div v-if="checkdate(10,31)">Happy Halloween!🎃🎉</div>
       <div v-if="checkdate(12,25)">Merry Christmas!🎅🎉</div>
-      <div v-if="checkdate(10,14)">建站{{(new Date().getFullYear()) - 2018}}周年啦！</div>
+      <div v-if="checkdate(10,14)">建站{{(new Date().getFullYear()) - 2018}}周年啦!</div>
       <p v-for="i in list" :key="i.title">
         <a :key="i.site" :href="i.site" target="_blank" :title="i.desc">{{i.title}}</a>
       </p>
@@ -19,7 +19,7 @@
         {{$t('developing3')}}
       </p>
       <p>{{$t('zwf')}}<br><br><br><br><br></p>
-      <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br><br><br><br><br>
+      <!-- <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br><br><br><br><br> -->
     </Card>
   </div>
 </template>
