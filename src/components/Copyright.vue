@@ -61,19 +61,28 @@ export default {
 @import "../style/importme.less";
 #copyright {
   background-color: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(5px);
   text-align: center;
-  padding: 10px;
   font-size: @basicfont;
-  width: 100%;
   bottom: 0;
-  left:0;
-  right:0;
-  transition:bottom 2s ease-in-out;
+  left: 0;
+  right: 0;
+  padding: 8px;
   position: fixed;
   z-index: 12345;
+  @media screen and (min-width: @sm) {
+    transition: bottom 1.5s ease-in-out;
+  }
+  @media screen and (max-width: @sm) {
+    transition: bottom 3s ease-in-out;
+  }
 }
 .hidden{
-  bottom: calc(0px - 40%) !important;
+  @media screen and (min-width: @sm) {
+    bottom: calc(0px - 20%) !important;
+  }
+  @media screen and (max-width: @sm) {
+    bottom: calc(0px - 100%) !important;
+  }
 }
 </style>
