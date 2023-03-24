@@ -1,40 +1,18 @@
 {
-  "name": "chiweb",
-  "version": "3.3.0",
   "private": true,
-  "author": "chihuo2104<chihuo2104@moekonnyaku.com>",
   "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/i18n/**/*.json\""
-  },
-  "dependencies": {
-    "axios": "^0.24.0",
-    "core-js": "^3.6.5",
-    "vue": "^3.0.0",
-    "vue-i18n": "^9.1.0",
-    "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@intlify/vue-i18n-loader": "^3.0.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^7.0.0",
-    "less": "^3.0.4",
-    "less-loader": "^5.0.0",
-    "vue-cli-plugin-i18n": "~2.3.1"
-  }
+    "nuxt": "^3.3.1"
+  },
+  "name": "chiweb",
+  "version": "4.0.0",
+  "description": "A next-generation solution for the nagivate website",
+  "repository": "https://github.com/chi-net/chiweb/",
+  "author": "chihuo2104 <i@chihuo2104.dev>"
 }

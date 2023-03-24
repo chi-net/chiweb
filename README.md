@@ -1,12 +1,7 @@
 # chiweb
-# based on Webpack & Vue & Jenkins & Node
-This Project used Jenkins CI System.
-# Development in dev branch!
 
-use this shell to development.
+## Rewriting for v4.0 next-generation.
 
-```shell
-yarn install
-yarn dev
-```
+## A next-generation solution for the nagivate website
 
+Old Code: <https://github.com/chi-net/chiweb/tree/v3.3>
