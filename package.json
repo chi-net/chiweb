@@ -14,5 +14,9 @@
   "version": "4.0.0",
   "description": "A next-generation solution for the nagivate website",
   "repository": "https://github.com/chi-net/chiweb/",
-  "author": "chihuo2104 <i@chihuo2104.dev>"
+  "author": "chihuo2104 <i@chihuo2104.dev>",
+  "dependencies": {
+    "sass": "^1.60.0",
+    "scss": "^0.2.4"
+  }
 }
